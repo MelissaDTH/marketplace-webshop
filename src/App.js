@@ -1,6 +1,8 @@
 import React, { Fragment } from "react";
-import { Navbar, NavDropdown, Nav, Form, FormControl, Button } from "react-bootstrap";
+import { Navbar, NavDropdown, Nav, Button } from "react-bootstrap";
 import "./App.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCartPlus } from "@fortawesome/free-solid-svg-icons";
 
 function App() {
   return (
@@ -28,7 +30,10 @@ function App() {
             <Nav.Link eventKey={2} href="/signup">
               Sign up
             </Nav.Link>
-            <Button href="/cart">Shopping Cart</Button>
+            <Button variant="warning" href="/cart">
+              <FontAwesomeIcon icon={faCartPlus} /> {""}
+              Cart
+            </Button>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
