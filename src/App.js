@@ -6,7 +6,7 @@ import { faCartPlus } from "@fortawesome/free-solid-svg-icons";
 import "./App.css";
 
 // Containers
-import HomeContainer from "./Home";
+import HomeContainer from "./components/Home";
 
 
 function App() {
