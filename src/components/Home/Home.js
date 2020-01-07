@@ -26,7 +26,9 @@ export default function Home(props) {
             Marketplace team
           </p>
           <br />
-          <h2>Popular Product Categories</h2>
+          <br />
+          <h2 className="title-product-cat">Popular Product Categories</h2>
+          <br />
         </div>
       </main>
     </div>

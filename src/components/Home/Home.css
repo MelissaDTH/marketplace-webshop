@@ -6,7 +6,7 @@
   margin: 30px auto;
 }
 
-p, h2 {
+p, .title-product-cat {
   text-align: center;
   font-family: 'Montserrat', sans-serif;
   width: 950px;
