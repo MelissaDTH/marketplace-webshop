@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+.authorization-title, .signup-title {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  margin: 30px auto;
+}
+
+.auth-form {
+  line-height: 35px;
+}
+
+.login-register, .signup-register, .auth-form {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  width: 350px;
+  margin: auto;
+}
+
+.login-register, .signup-register {
+  line-height: 65px;
+}
+
+.auth-success {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  width: 350px;
+  margin: auto;
+  line-height: 95px;
+}

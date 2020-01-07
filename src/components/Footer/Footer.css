@@ -1,4 +1,6 @@
-.nav {
-  min-height: 100vh; 
-  min-height: 100%; 
+.footer {
+  position:fixed;
+  bottom:0;
+  left:0;
+  margin-top: 50px;
 }

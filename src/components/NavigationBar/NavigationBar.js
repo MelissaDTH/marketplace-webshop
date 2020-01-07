@@ -1,13 +1,16 @@
 import React, { Fragment } from "react";
 import { Navbar, NavDropdown, Nav, Button } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCartPlus } from "@fortawesome/free-solid-svg-icons";
+import { faCartPlus, faStore } from "@fortawesome/free-solid-svg-icons";
 
 function NavigationBar() {
   return (
     <Fragment>
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-        <Navbar.Brand href="/">Marketplace</Navbar.Brand>
+      <Navbar.Brand href="/">
+          <FontAwesomeIcon icon={faStore} /> {""}
+          Marketplace
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto">
@@ -18,6 +21,7 @@ function NavigationBar() {
             >
               <NavDropdown.Item href="/home">Home</NavDropdown.Item>
               <NavDropdown.Item href="/electronics">Electronics</NavDropdown.Item>
+              <NavDropdown.Item href="/plants">Plants and gardening</NavDropdown.Item>
               <NavDropdown.Item href="/fashion">Fashion</NavDropdown.Item>
               <NavDropdown.Item href="/sports">Sporting Goods</NavDropdown.Item>
               <NavDropdown.Item href="/movies-music">

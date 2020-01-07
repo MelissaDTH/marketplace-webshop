@@ -5,9 +5,9 @@ export default function Home(props) {
   return (
     <div className="home">
       <main>
-        <h1 className="title">© MARKETPLACE</h1>
+        <h1 className="title">MARKETPLACE</h1>
         <div className="home-display">
-          <p>
+          <p className="home-par">
             Marketplace is a Dutch multinational e-commerce corporation based in
             Amsterdam, the Netherlands, that facilitates consumer-to-consumer
             and business-to-consumer sales through its website. Marketplace was
@@ -20,7 +20,8 @@ export default function Home(props) {
             items after a limited number of free listings, and again when those
             items are sold.{" "}
           </p>
-          <p>
+          <br />
+          <p className="home-closure">
             Love,
             <br />
             Marketplace team

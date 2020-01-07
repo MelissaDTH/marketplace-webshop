@@ -6,7 +6,7 @@
   margin: 30px auto;
 }
 
-p, .title-product-cat {
+.title-product-cat, .home-closure, .home-par {
   text-align: center;
   font-family: 'Montserrat', sans-serif;
   width: 950px;

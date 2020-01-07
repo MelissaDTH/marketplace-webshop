@@ -1,5 +1,8 @@
-import { combineReducers } from 'redux'
+import { combineReducers } from "redux";
+import login from "./login";
+import signup from "./signup";
 
 export default combineReducers({
-  // your reducers will go here
-})
+  login,
+  signup
+});
