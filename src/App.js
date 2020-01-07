@@ -13,21 +13,21 @@ function App() {
   return (
     <Fragment>
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-        <Navbar.Brand href="/home" >Marketplace</Navbar.Brand>
+        <Navbar.Brand href="/" >Marketplace</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto">
-            <Nav.Link href="/home">Home</Nav.Link>
+            <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/about">About</Nav.Link>
             <NavDropdown
               title="Product categories"
               id="collasible-nav-dropdown"
             >
-              <NavDropdown.Item href="/products/1">
+              <NavDropdown.Item href="/electronics">
                 Electronics
               </NavDropdown.Item>
-              <NavDropdown.Item href="/products/2">Kitchen</NavDropdown.Item>
-              <NavDropdown.Item href="/products/3">Clothing</NavDropdown.Item>
+              <NavDropdown.Item href="/home&garden">Kitchen</NavDropdown.Item>
+              <NavDropdown.Item href="/fashion">Clothing</NavDropdown.Item>
             </NavDropdown>
           </Nav>
           <Nav>
@@ -43,7 +43,7 @@ function App() {
         </Navbar.Collapse>
       </Navbar>
 
-      <Route exact path="/home" component={HomeContainer} />
+      <Route exact path="/" component={HomeContainer} />
     </Fragment>
   );
 }

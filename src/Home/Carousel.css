@@ -1,9 +1,13 @@
 .carousel img {
-  max-height: 550px;
+  max-height: 540px;
 }
 
 .carousel {
-  /* position: fixed; */
-  width: 1050px;
-  margin: auto;
+  position: relative;
+  margin: 10px auto;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+  .carousel {width: 75%;}
 }

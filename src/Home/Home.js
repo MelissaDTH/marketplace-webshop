@@ -5,7 +5,7 @@ export default function Home(props) {
   return (
     <div className="home">
       <main>
-        <h1 className="title">Testing</h1>
+        <h1 className="title"></h1>
         <div className="home-display">
         </div>
       </main>
