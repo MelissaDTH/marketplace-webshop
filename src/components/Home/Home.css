@@ -6,10 +6,10 @@
   margin: 30px auto;
 }
 
-p {
+p, h2 {
   text-align: center;
   font-family: 'Montserrat', sans-serif;
   width: 950px;
-  margin: 30px auto;
+  margin: auto;
 
 }

@@ -13,7 +13,7 @@ function Footer() {
           <FontAwesomeIcon icon={faStore} /> {""}
           Marketplace
         </Navbar.Brand>
-        {/* <Nav>
+        <Nav>
         <Button variant="warning" href="https://github.com/MelissaDTH">
           <FontAwesomeIcon icon={faCode} /> {""}
           My GitHub
@@ -22,16 +22,7 @@ function Footer() {
           <FontAwesomeIcon icon={faLink} /> {""}
          My LinkedIn
         </Button>
-        </Nav> */}
-        <Nav>
-            <Nav.Link href="/login">Log in</Nav.Link>
-            <Nav.Link eventKey={2} href="/signup">
-              Sign up
-            </Nav.Link>
-            <Button variant="warning" href="/cart">
-              Cart
-            </Button>
-          </Nav>
+        </Nav>
       </Navbar>
     </Fragment>
   );

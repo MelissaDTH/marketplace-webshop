@@ -8,43 +8,43 @@ function CategoryCarousel() {
     <Fragment>
       <Carousel>
         <Carousel.Item>
-          <Link to="/electronics">
+          <Link to="/plants">
           <img
             className="d-block w-100 h-30"
-            src="https://images.pexels.com/photos/35550/ipad-tablet-technology-touch.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-            alt="Electronics slide"
+            src="https://images.pexels.com/photos/1600130/pexels-photo-1600130.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+            alt="Plants slide"
           />
           </Link>
           <Carousel.Caption>
-            <h2>Electronics</h2>
-            <h6>Keep up with the latest in electronics and technology and save money with the great deals on Marketplace.</h6>
+            <h2>Plants</h2>
+            <h6>Plants are a great way to make your house a better space to live in. You’ll find everything you need in and around your home to make it uniquely your own.</h6>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-        <Link to="/home&garden">
+        <Link to="/sports">
           <img
             className="d-block w-100"
-            src="https://images.pexels.com/photos/298842/pexels-photo-298842.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-            alt="Home and garden slide"
+            src="https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+            alt="Sport slide"
           />
           </Link>
           <Carousel.Caption>
-            <h2>Home & Garden</h2>
-            <h6>When it comes to home improvement, look no further than the home and garden pages of Marketplace.</h6>
+            <h2>Sporting Goods</h2>
+            <h6>Are you ready to play like a pro? No matter what your favorite sport is, Marketplace has the equipment you need to perform at your peak.</h6>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-        <Link to="/fashion">
+        <Link to="/movies-music">
           <img
             className="d-block w-100"
-            src="https://images.pexels.com/photos/996329/pexels-photo-996329.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-            alt="Fashion slide"
+            src="https://images.pexels.com/photos/1040160/pexels-photo-1040160.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
+            alt="Movies, music and games slide"
           />
           </Link>
           <Carousel.Caption>
-            <h2>Fashion</h2>
+            <h2>Movies, music and games</h2>
             <h6>
-            Take the strain out of shopping with Marketplace. Find great deals on fashionable jeans, sweaters, suits and that look sharp and stylish.
+            Turn your home into a theater-like experience with a new or refurbished TV by Samsung, LG, or Sharp. Or up your game with a new or refurbished video game console like the PS4 or Xbox One.
             </h6>
           </Carousel.Caption>
         </Carousel.Item>

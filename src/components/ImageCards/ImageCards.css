@@ -3,7 +3,11 @@
 }
 
 .card {
-  /* position: relative; */
+  position: relative;
   width: 950px;
   margin: 30px auto;
+}
+
+.card.text {
+  font-size: 100px;
 }

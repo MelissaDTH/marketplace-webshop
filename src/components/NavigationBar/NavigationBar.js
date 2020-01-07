@@ -7,21 +7,22 @@ function NavigationBar() {
   return (
     <Fragment>
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-        <Navbar.Brand href="/" >Marketplace</Navbar.Brand>
+        <Navbar.Brand href="/">Marketplace</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto">
-            <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/about">About</Nav.Link>
             <NavDropdown
               title="Product categories"
               id="collasible-nav-dropdown"
             >
-              <NavDropdown.Item href="/electronics">
-                Electronics
+              <NavDropdown.Item href="/home">Home</NavDropdown.Item>
+              <NavDropdown.Item href="/electronics">Electronics</NavDropdown.Item>
+              <NavDropdown.Item href="/fashion">Fashion</NavDropdown.Item>
+              <NavDropdown.Item href="/sports">Sporting Goods</NavDropdown.Item>
+              <NavDropdown.Item href="/movies-music">
+                Movies, Music and Games
               </NavDropdown.Item>
-              <NavDropdown.Item href="/home&garden">Kitchen</NavDropdown.Item>
-              <NavDropdown.Item href="/fashion">Clothing</NavDropdown.Item>
             </NavDropdown>
           </Nav>
           <Nav>

@@ -21,10 +21,12 @@ export default function Home(props) {
             items are sold.{" "}
           </p>
           <p>
-            Love, 
+            Love,
             <br />
             Marketplace team
           </p>
+          <br />
+          <h2>Popular Product Categories</h2>
         </div>
       </main>
     </div>
