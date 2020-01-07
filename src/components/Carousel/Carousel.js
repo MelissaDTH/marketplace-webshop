@@ -16,8 +16,8 @@ function CategoryCarousel() {
           />
           </Link>
           <Carousel.Caption>
-            <h3>Electronics</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <h2>Electronics</h2>
+            <h6>Keep up with the latest in electronics and technology and save money with the great deals on Marketplace.</h6>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -29,8 +29,8 @@ function CategoryCarousel() {
           />
           </Link>
           <Carousel.Caption>
-            <h3>Home & Garden</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h2>Home & Garden</h2>
+            <h6>When it comes to home improvement, look no further than the home and garden pages of Marketplace.</h6>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -42,10 +42,10 @@ function CategoryCarousel() {
           />
           </Link>
           <Carousel.Caption>
-            <h3>Fashion</h3>
-            <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-            </p>
+            <h2>Fashion</h2>
+            <h6>
+            Take the strain out of shopping with Marketplace. Find great deals on fashionable jeans, sweaters, suits and that look sharp and stylish.
+            </h6>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>{" "}

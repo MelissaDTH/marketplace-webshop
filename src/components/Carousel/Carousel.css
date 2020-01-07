@@ -2,7 +2,7 @@
   max-height: 600px;
 }
 
-.carousel, .Carousel.Caption {
+.carousel {
   position: relative;
   margin: 10px auto;
   cursor: pointer;
