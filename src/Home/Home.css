@@ -1,0 +1,10 @@
+.home {
+  background-color: whitesmoke;
+}
+
+.home main {
+  position: relative;
+  /* width: 950px; */
+  margin: 0 auto;
+  background-color: white;
+}

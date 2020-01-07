@@ -1,14 +1,19 @@
 import React, { Fragment } from "react";
+import { Route } from "react-router-dom";
 import { Navbar, NavDropdown, Nav, Button } from "react-bootstrap";
-import "./App.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartPlus } from "@fortawesome/free-solid-svg-icons";
+import "./App.css";
+
+// Containers
+import HomeContainer from "./Home";
+
 
 function App() {
   return (
     <Fragment>
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-        <Navbar.Brand href="/home">Marketplace</Navbar.Brand>
+        <Navbar.Brand href="/home" >Marketplace</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto">
@@ -37,6 +42,8 @@ function App() {
           </Nav>
         </Navbar.Collapse>
       </Navbar>
+
+      <Route exact path="/home" component={HomeContainer} />
     </Fragment>
   );
 }
