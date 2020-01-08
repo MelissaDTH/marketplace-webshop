@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+
+.about article {
+  font-family: 'Montserrat', sans-serif;
+  width: 950px;
+  margin: 50px auto;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid lightgray;
+}
+
+.about article .about-content {
+  padding: 50px 30px;
+}
+
+.about article.reverse {
+  width: 950px;
+  margin: 50px auto;
+  background-color: white;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.about article.reverse .about-content {
+  padding: 50px 20px;
+}

@@ -50,7 +50,7 @@ class SignUp extends Component {
           />
         </Form.Group>
         <Button variant="warning" type="submit" className="auth-btn">
-          Sign up
+          SIGN UP
         </Button>
         <p className="signup-register">
           Already have an account? <a href="/login">Log in here</a>

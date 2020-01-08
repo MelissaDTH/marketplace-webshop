@@ -1,7 +1,4 @@
 import React, { Component, Fragment } from "react";
-import { connect } from "react-redux";
-import { signup } from "../../../actions/authentication";
-import { Button, Form } from "react-bootstrap";
 import "../Authorization.css";
 
 class LoginSuccess extends Component {
