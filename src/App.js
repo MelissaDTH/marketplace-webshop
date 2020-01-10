@@ -24,7 +24,7 @@ function App() {
       <Route path="/signup" component={Signup} />
       <Route path="/login" component={LoginContainer} />
       <Route path="/category/" exact component={CategoryList} />
-      <Route path="/category/:categoryId/" exact component={ProductList} />
+      <Route path="/category/:categoryId/products" exact component={ProductList} />
       <Footer />
     </Fragment>
   );
