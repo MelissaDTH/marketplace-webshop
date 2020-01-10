@@ -19,12 +19,12 @@ function NavigationBar() {
               title="Product categories"
               id="collasible-nav-dropdown"
             >
-              <NavDropdown.Item href="/home">Home</NavDropdown.Item>
-              <NavDropdown.Item href="/electronics">Electronics</NavDropdown.Item>
-              <NavDropdown.Item href="/plants">Plants and gardening</NavDropdown.Item>
-              <NavDropdown.Item href="/fashion">Fashion</NavDropdown.Item>
-              <NavDropdown.Item href="/sports">Sporting Goods</NavDropdown.Item>
-              <NavDropdown.Item href="/movies-music">
+              <NavDropdown.Item href="/category/1">Home</NavDropdown.Item>
+              <NavDropdown.Item href="/category/2">Plants and gardening</NavDropdown.Item>
+              <NavDropdown.Item href="/category/3">Electronics</NavDropdown.Item>
+              <NavDropdown.Item href="/category/4">Sporting Goods</NavDropdown.Item>
+              <NavDropdown.Item href="/category/5">Fashion</NavDropdown.Item>
+              <NavDropdown.Item href="/category/6">
                 Movies, Music and Games
               </NavDropdown.Item>
             </NavDropdown>

@@ -9,14 +9,14 @@ function CategoryCards() {
     <Fragment>
       <CardDeck>
         <Card>
-          <Link to="/electronics">
+          <Link to="/category/3">
             <Card.Img
               variant="top"
               src="https://images.pexels.com/photos/35550/ipad-tablet-technology-touch.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
             />
           </Link>
           <Card.Body>
-            <Link to="/electronics">
+            <Link to="/category/3">
               <Button variant="warning">Electronics</Button>
             </Link>
             <br />
@@ -24,14 +24,14 @@ function CategoryCards() {
           </Card.Body>
         </Card>
         <Card>
-          <Link to="/home">
+          <Link to="/category/1">
             <Card.Img
               variant="top"
               src="https://images.pexels.com/photos/584399/living-room-couch-interior-room-584399.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
             />
           </Link>
           <Card.Body>
-            <Link to="/home">
+            <Link to="/category/1">
               <Button variant="warning">Home</Button>
             </Link>{" "}
             <br />
@@ -39,14 +39,14 @@ function CategoryCards() {
           </Card.Body>
         </Card>
         <Card>
-          <Link to="/fashion">
+          <Link to="/category/5">
             <Card.Img
               variant="top"
               src="https://images.pexels.com/photos/794064/pexels-photo-794064.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
             />
           </Link>
           <Card.Body>
-            <Link to="/fashion">
+            <Link to="/category/5">
               <Button variant="warning">Fashion</Button>
             </Link>
             <br />

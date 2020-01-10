@@ -1,4 +1,5 @@
 import React from "react";
+import { Button } from "react-bootstrap";
 import "./about.css";
 
 export default function About() {
@@ -21,7 +22,7 @@ export default function About() {
           <img
             width={520}
             height={420}
-            src="https://images.pexels.com/photos/1595387/pexels-photo-1595387.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+            src="https://images.pexels.com/photos/1015568/pexels-photo-1015568.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
             alt="People representing the company"
           />
         </article>
@@ -55,10 +56,13 @@ export default function About() {
               doing, and we’re very passionate about it. See what it’s like to
               be an engineer at Marketplace.
             </p>
+            <Button variant="warning" href="https://www.linkedin.com/in/melissathart/">
+            Join us
+          </Button>
           </div>
           <img
             width={520}
-            height={420}
+            height={425}
             src="https://images.pexels.com/photos/1251860/pexels-photo-1251860.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
             alt="person having a job interview"
           />

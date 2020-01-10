@@ -8,7 +8,7 @@ function CategoryCarousel() {
     <Fragment>
       <Carousel>
         <Carousel.Item>
-          <Link to="/plants">
+          <Link to="/category/2">
           <img
             className="d-block w-100 h-30"
             src="https://images.pexels.com/photos/1600130/pexels-photo-1600130.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
@@ -21,7 +21,7 @@ function CategoryCarousel() {
           </Link>
         </Carousel.Item>
         <Carousel.Item>
-        <Link to="/sports">
+        <Link to="/category/4">
           <img
             className="d-block w-100"
             src="https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
@@ -34,7 +34,7 @@ function CategoryCarousel() {
           </Link>
         </Carousel.Item>
         <Carousel.Item>
-        <Link to="/movies-music">
+        <Link to="/category/6">
           <img
             className="d-block w-100"
             src="https://images.pexels.com/photos/1040160/pexels-photo-1040160.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
