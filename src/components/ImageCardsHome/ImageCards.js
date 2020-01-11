@@ -8,7 +8,7 @@ function CategoryCards() {
   return (
     <Fragment>
       <CardDeck>
-        <Card>
+        <Card className="home-card">
           <Link to="/category/3">
             <Card.Img
               variant="top"

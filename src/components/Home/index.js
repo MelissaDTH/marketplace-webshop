@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Home from "./Home";
 import Carousel from "../Carousel/Carousel";
-import ImageCards from "../ImageCards/ImageCards"
+import ImageCards from "../ImageCardsHome/ImageCards"
 import { connect } from "react-redux";
 
 class HomeContainer extends Component {

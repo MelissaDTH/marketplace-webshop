@@ -15,6 +15,8 @@ function NavigationBar() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto">
             <Nav.Link href="/about">About</Nav.Link>
+            <Nav.Link href="/category">All categories</Nav.Link>
+
             <NavDropdown
               title="Product categories"
               id="collasible-nav-dropdown"

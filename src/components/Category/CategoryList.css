@@ -1,0 +1,17 @@
+
+.cat-list-card {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+}
+
+.cat-title-link:link, .cat-title-link:visited {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+.cat-title-link:hover {
+  text-decoration: none;
+  color: black;
+}
