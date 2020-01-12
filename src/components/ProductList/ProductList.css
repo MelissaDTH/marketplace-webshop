@@ -1,0 +1,19 @@
+.product-div {
+  border: black solid 1px;
+}
+
+.product-div img {
+  width: 30%;
+  height: auto;
+}
+
+.product-link:link, .product-link:visited {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+.product-link:hover {
+  text-decoration: none;
+  color: rgb(235, 169, 2);
+}
