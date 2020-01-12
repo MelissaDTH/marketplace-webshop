@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import { Route } from "react-router-dom";
-
+import './App.css'
 // Containers
 import NavigationBar from "./components/NavigationBar/NavigationBar";
 import Signup from "./components/Authorization/Signup/Signup";
@@ -15,6 +15,7 @@ import ProductList from "./components/ProductList";
 
 function App() {
   return (
+    <div className='App'>
     <Fragment>
       <NavigationBar />
       <Route path="/" exact component={HomeContainer} />
@@ -27,6 +28,7 @@ function App() {
       <Route path="/category/:categoryId/products" exact component={ProductList} />
       <Footer />
     </Fragment>
+    </div>
   );
 }
 

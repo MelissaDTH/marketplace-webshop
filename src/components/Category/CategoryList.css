@@ -1,17 +1,23 @@
 
 .cat-list-card {
-  display: flex;
-  flex-flow: row;
+  display: inline-flex;
+  overflow: auto;
+  margin: 20px auto;
+  height: 500px;
+  width: 400px;
   justify-content: center;
+  line-height: 28px;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 .cat-title-link:link, .cat-title-link:visited {
   text-decoration: none;
-  color: black;
+  color: rgb(245, 150, 48);
   cursor: pointer;
 }
 
 .cat-title-link:hover {
   text-decoration: none;
-  color: black;
+  color: rgb(222, 135, 5);
 }

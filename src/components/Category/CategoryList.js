@@ -13,7 +13,7 @@ export default function CategoriesList(props) {
           ? "Loading..."
           : props.categories.map(category => (
               <div className="cat-list-card">
-                <CardGroup>
+                <CardGroup >
                   <Card>
                     <Link to={`/category/${category.id}/products/`} className="cat-link">
                       <Card.Img variant="top" src={category.picture} />

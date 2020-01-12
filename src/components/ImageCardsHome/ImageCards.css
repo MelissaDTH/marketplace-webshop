@@ -1,13 +1,6 @@
-.button {
-  margin-left: 30px;
-}
-
-.card .home-card {
+.home-card {
   position: relative;
-  width: 950px;
   margin: 30px auto;
+  line-height: 25px;
+  text-align: center;
 }
-
-.card.text {
-  font-size: 100px;
-} 
