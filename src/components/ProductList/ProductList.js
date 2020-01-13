@@ -12,13 +12,17 @@ export default function EventDetails(props) {
               <div className='product-div'>
                 <li key={product.id}>
                   <Link className="product-link" to={`/product/${product.id}/products/`}>
+                    <div className="product-img-div">
                     <img src={product.picture}></img>
+                    </div>
+                    <div className="product-info-div">
                     <h3>{product.name}</h3>
-                    </Link>{" "}
                     <p>{product.description}</p>
                     <p>EUR {product.price}</p>
                     <p>Color: {product.color}</p>
                     <p>{product.userId.username}</p>
+                    </div>
+                    </Link>{" "}
                 </li>
                 </div>
               ))}

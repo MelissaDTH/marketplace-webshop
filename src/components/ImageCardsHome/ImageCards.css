@@ -4,3 +4,14 @@
   line-height: 25px;
   text-align: center;
 }
+
+.image-card-link:link, .image-card-link:visited {
+    text-decoration: none;
+    color: rgb(33, 32, 32);
+    cursor: pointer;
+  }
+  
+  .image-card-link:hover {
+    text-decoration: none;
+    color: rgb(133, 80, 1);
+  }

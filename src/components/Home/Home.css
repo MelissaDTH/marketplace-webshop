@@ -1,15 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
-
 .title {
-  font-family: 'Montserrat', sans-serif;
   text-align: center;
   margin: 30px auto;
 }
 
 .title-product-cat, .home-closure, .home-par {
   text-align: center;
-  font-family: 'Montserrat', sans-serif;
-  width: 950px;
+  max-width: 950px;
   margin: auto;
 
 }

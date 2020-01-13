@@ -1,13 +1,31 @@
 .product-div {
-  border: black solid 1px;
+  height: 280px;
+  padding: 9px 0;
+  border-width: 1px 0;
+  margin: 10px 10px auto;
+  border-style: solid;
+  border-color: transparent;
+  border-bottom-color: #ddd;
+  line-height: 30px;
 }
 
-.product-div img {
-  width: 30%;
+.product-img-div img {
+  width: 15%;
   height: auto;
+  float: left;
 }
 
-.product-link:link, .product-link:visited {
+.product-div li {
+  list-style-type: none;
+}
+
+.product-div h3 {
+  display: inline-block;
+
+}
+
+.product-link:link,
+.product-link:visited {
   text-decoration: none;
   color: rgb(0, 0, 0);
   cursor: pointer;
@@ -15,5 +33,7 @@
 
 .product-link:hover {
   text-decoration: none;
-  color: rgb(235, 169, 2);
+  color: rgb(50, 50, 50);
 }
+
+/* @media only screen and (max-width: 600px) */
