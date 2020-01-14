@@ -15,7 +15,7 @@ function allProducts(products) {
 export const getProducts = categoryId => dispatch => {
   request(`${baseUrl}/category/${categoryId}/products`)
     .then(response => {
-      console.log("response test", response);
+      // console.log("response test", response);
       const action = allProducts(response.body);
       dispatch(action);
     })

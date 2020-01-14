@@ -3,15 +3,16 @@ import { Route } from "react-router-dom";
 import './App.css'
 // Containers
 import NavigationBar from "./components/NavigationBar/NavigationBar";
+import About from "./components/About";
 import Signup from "./components/Authorization/Signup/Signup";
 import LoginContainer from "./components/Authorization/Login/LoginContainer";
 import HomeContainer from "./components/Home";
 import Footer from "./components/Footer/Footer";
 import SignupSuccess from "./components/Authorization/Signup/SignupSuccess";
 import LoginSuccess from "./components/Authorization/Login/LoginSuccess";
-import About from "./components/About";
 import CategoryList from "./components/Category";
 import ProductList from "./components/ProductList";
+import ProductDetails from "./components/ProductDetails";
 
 function App() {
   return (
@@ -25,7 +26,8 @@ function App() {
       <Route path="/signup" component={Signup} />
       <Route path="/login" component={LoginContainer} />
       <Route path="/category/" exact component={CategoryList} />
-      <Route path="/category/:categoryId/products" exact component={ProductList} />
+      <Route path="/category/:categoryId/" exact component={ProductList} />
+      <Route path="/category/:categoryId/products/" exact component={ProductDetails} />
       <Footer />
     </Fragment>
     </div>

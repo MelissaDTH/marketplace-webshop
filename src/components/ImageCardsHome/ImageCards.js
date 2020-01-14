@@ -10,7 +10,7 @@ function CategoryCards() {
     <div className="home-card">
       <CardDeck>
         <Card>
-          <Link to="/category/2/products/" className="image-card-link">
+          <Link to="/category/2/" className="image-card-link">
             <Card.Img
               variant="top"
               src="https://images.pexels.com/photos/35550/ipad-tablet-technology-touch.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
@@ -25,7 +25,7 @@ function CategoryCards() {
           </Link>
         </Card>
         <Card>
-          <Link to="/category/1/products/" className="image-card-link">
+          <Link to="/category/1/" className="image-card-link">
             <Card.Img
               variant="top"
               src="https://images.pexels.com/photos/584399/living-room-couch-interior-room-584399.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
@@ -40,7 +40,7 @@ function CategoryCards() {
           </Link>
         </Card>
         <Card>
-          <Link to="/category/4/products/" className="image-card-link">
+          <Link to="/category/4/" className="image-card-link">
             <Card.Img
               variant="top"
               src="https://images.pexels.com/photos/794064/pexels-photo-794064.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"

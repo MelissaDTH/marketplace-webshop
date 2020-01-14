@@ -1,7 +1,16 @@
-.about article {
+.about main {
   width: 950px;
-  height: 360px;
   margin: 50px auto;
+
+}
+
+.about img {
+  width: 530px;
+  height: 358px;
+}
+
+.about article {
+  height: 360px;
   display: flex;
   justify-content: space-between;
   border: 1px solid lightgray;
@@ -17,14 +26,6 @@
   flex-direction: row-reverse;
 }
 
-.about article.reverse .about-content {
-  padding: 30px 10px;
-}
-
-.about img {
-  width: 530px;
-  height: 358px;
-}
 
 .about-content, h1 {
   line-height: 26px;

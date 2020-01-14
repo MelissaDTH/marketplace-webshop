@@ -13,10 +13,10 @@ export default function CategoriesList(props) {
           : props.categories.map(category => (
               <div className="cat-list-card">
                   <Card>
-                    <Link to={`/category/${category.id}/products/`} className="image-card-link">
+                    <Link to={`/category/${category.id}`} className="image-card-link">
                       <Card.Img variant="top" src={category.picture} />
                       <Card.Body>
-                      <Link to={`/category/${category.id}/products/`} className="cat-title-link">
+                      <Link to={`/category/${category.id}/`} className="cat-title-link">
                       <Button variant="warning" className="category-btn">{category.name}</Button>
 
                         {/* <Card.Title className="cat-title"><b>{category.name}</b></Card.Title> */}

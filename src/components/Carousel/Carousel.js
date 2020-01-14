@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import Carousel from 'react-bootstrap/Carousel'
 import { Link } from "react-router-dom";
 import "./Carousel.css"
@@ -8,7 +8,7 @@ function CategoryCarousel() {
     <div className="carousel-div">
       <Carousel>
         <Carousel.Item>
-          <Link to="/category/3/products/">
+          <Link to="/category/3/">
           <img
             className="d-block w-100 h-30"
             src="https://images.pexels.com/photos/1600130/pexels-photo-1600130.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
@@ -21,7 +21,7 @@ function CategoryCarousel() {
           </Link>
         </Carousel.Item>
         <Carousel.Item>
-        <Link to="/category/5/products/">
+        <Link to="/category/5/">
           <img
             className="d-block w-100"
             src="https://images.pexels.com/photos/841132/pexels-photo-841132.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
@@ -34,7 +34,7 @@ function CategoryCarousel() {
           </Link>
         </Carousel.Item>
         <Carousel.Item>
-        <Link to="/category/6/products/">
+        <Link to="/category/6/">
           <img
             className="d-block w-100"
             src="https://images.pexels.com/photos/1389429/pexels-photo-1389429.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
