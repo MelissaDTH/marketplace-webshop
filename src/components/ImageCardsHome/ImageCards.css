@@ -3,6 +3,7 @@
   margin: 30px auto;
   line-height: 25px;
   text-align: center;
+  max-width: 2350px;
 }
 
 .image-card-link:link, .image-card-link:visited {

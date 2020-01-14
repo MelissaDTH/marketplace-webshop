@@ -20,8 +20,6 @@ export default function About() {
             </p>
           </div>
           <img
-            width={520}
-            height={420}
             src="https://images.pexels.com/photos/1015568/pexels-photo-1015568.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
             alt="People representing the company"
           />
@@ -39,8 +37,6 @@ export default function About() {
             </p>
           </div>
           <img
-            width={520}
-            height={420}
             src="https://images.pexels.com/photos/1325766/pexels-photo-1325766.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
             alt="Showing diversity in a group of people"
           />
@@ -61,8 +57,6 @@ export default function About() {
           </Button>
           </div>
           <img
-            width={520}
-            height={425}
             src="https://images.pexels.com/photos/1251860/pexels-photo-1251860.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
             alt="person having a job interview"
           />
