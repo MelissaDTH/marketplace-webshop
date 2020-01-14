@@ -1,48 +1,44 @@
 import React from "react";
-import { loadCategory } from "../../actions/categories";
-import { getProducts } from "../../actions/products";
+import { getComments } from "../../actions/comments";
+import { getOneProduct } from "../../actions/products";
 import { connect } from "react-redux";
 import ProductDetails from "./ProductDetails";
 
 class ProductDetailsContainer extends React.Component {
-    componentDidMount = () => {
-      // const { categoryId } = this.props.match.params;
-      this.props.getProducts();
-    };
-  
-    render() {
-      if (this.props.products.length === 0) {
-        return <p>Loading...</p>;
-      } else {
-        const item = this.props.products.find(
-          products => products.name === this.props.match.params.product
-        );
-        return (
-          <div>
-            <ProductDetails
-              name={item.name}
-              price={item.price}
-              description={item.description}
-              imgUrl={item.picture}
-            />
-          </div>
-        );
-      }
+  componentDidMount = () => {
+    // const { categoryId } = this.props.match.params;
+    this.props.getOneProduct(Number(this.props.match.params.productId));
+    this.props.getComments(Number(this.props.match.params.productId));
+  };
+
+  render() {
+    if (this.props.product.length === 0) {
+      return <p>Loading...</p>;
+    } else {
+      return (
+        <div>
+          <ProductDetails
+            product={this.props.product}
+            comments={this.props.comments}
+          />
+        </div>
+      );
     }
   }
-  
-  const mapStateToProps = reduxState => {
-    console.log('products?', reduxState.products);
-    
-    return {
-      products: reduxState.products
-    };
-  };
-  
-  const mapDispatchToProps = { loadCategory, getProducts };
+}
 
-  export default connect(
-    mapStateToProps,
-    mapDispatchToProps
-  )(ProductDetailsContainer);
-    
+const mapStateToProps = reduxState => {
+  console.log("ONE product?", reduxState.product);
+
+  return {
+    product: reduxState.product,
+    comments: reduxState.comments
+  };
+};
+
+const mapDispatchToProps = { getOneProduct, getComments };
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(ProductDetailsContainer);

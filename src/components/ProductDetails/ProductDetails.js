@@ -7,20 +7,16 @@ export default function ProductDetails(props) {
       <div className="details">
       <div className="details__container">
           <div className="details__img-container">
-              <img src={props.imgUrl} />
+              <img src={props.product.picture} height={250}alt="product"/>
           </div>
           <div className="details__info">
-              <h1>{props.name}</h1>
-              <h5>{props.description}</h5>
+              <h1><b>{props.product.name}</b></h1>
+              <h5>{props.product.description}</h5>
 
-              <h3>{props.price}</h3>
-              <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Donec tristique ante eget sem maximus lobortis. Morbi et
-                  accumsan ipsum. Integer enim dui, elementum sit amet
-                  euismod sed, auctor quis eros. Integer a hendrerit ante.
+              <h3><b>EUR {props.product.price}</b></h3>
+              <p>Color: {props.product.color}
               </p>
-              <Link to="/" className="return">
+              <Link to="/category" className="return">
                   Return
               </Link>
           </div>

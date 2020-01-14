@@ -33,9 +33,8 @@ margin: 100px 50px 1000px 20px ;
   margin: -11px 10px -30px -20px;
 }
 
-.product-div h3 {
-  display: inline-block;
-
+.product-div h5 {
+  color: rgb(245, 173, 48);
 }
 
 .product-link:link,

@@ -21,7 +21,6 @@ class ProductsListContainer extends React.Component {
 }
 
 const mapStateToProps = ReduxState => {
-  // console.log("MSTP?! from productlist", ReduxState.products);
   return {
     category: ReduxState.category,
     products: ReduxState.products
