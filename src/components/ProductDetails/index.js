@@ -22,7 +22,7 @@ class ProductDetailsContainer extends React.Component {
             product={this.props.product}
             comments={this.props.comments}
           />
-          <br /> <br />
+          <br />
           <Comments productId={this.props.match.params.productId} />
           {/* <Link to="/category" className="return">
             Return
