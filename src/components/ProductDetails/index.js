@@ -3,12 +3,12 @@ import { getComments } from "../../actions/comments";
 import { getOneProduct } from "../../actions/products";
 import { connect } from "react-redux";
 import ProductDetails from "./ProductDetails";
+import Comments from "../Comments/index";
 
 class ProductDetailsContainer extends React.Component {
   componentDidMount = () => {
-    // const { categoryId } = this.props.match.params;
-    this.props.getOneProduct(Number(this.props.match.params.productId));
-    this.props.getComments(Number(this.props.match.params.productId));
+    const { productId } = this.props.match.params;
+    this.props.getOneProduct(Number(productId));
   };
 
   render() {
@@ -21,6 +21,9 @@ class ProductDetailsContainer extends React.Component {
             product={this.props.product}
             comments={this.props.comments}
           />
+          <Comments 
+            productId={this.props.match.params.productId} 
+          />
         </div>
       );
     }
@@ -28,8 +31,6 @@ class ProductDetailsContainer extends React.Component {
 }
 
 const mapStateToProps = reduxState => {
-  console.log("ONE product?", reduxState.product);
-
   return {
     product: reduxState.product,
     comments: reduxState.comments

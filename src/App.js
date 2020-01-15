@@ -13,6 +13,7 @@ import LoginSuccess from "./components/Authorization/Login/LoginSuccess";
 import CategoryList from "./components/Category";
 import ProductList from "./components/ProductList";
 import ProductDetails from "./components/ProductDetails";
+import Comments from "./components/Comments/Comments";
 
 function App() {
   return (
@@ -27,7 +28,8 @@ function App() {
       <Route path="/login" component={LoginContainer} />
       <Route path="/category/" exact component={CategoryList} />
       <Route path="/category/:categoryId/" exact component={ProductList} />
-      <Route path="/products/:productId/" exact component={ProductDetails} />
+      <Route path="/products/:productId/comments" exact component={ProductDetails} />
+      {/* <Route path="/products/:productId/comments" component={Comments} /> */}
       <Footer />
     </Fragment>
     </div>
