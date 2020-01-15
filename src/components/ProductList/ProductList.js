@@ -27,7 +27,7 @@ export default function ProductDetails(props) {
                     </h3>
                     <p className="product-descr">{product.description}</p>
                     <h5>
-                      <b>EUR {product.price}</b>
+                      <b>€ {product.price}</b>
                     </h5>
                     <p>Color: {product.color}</p>{" "}
                     <Button variant="warning">Add to Cart</Button>

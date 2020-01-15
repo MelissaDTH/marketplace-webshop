@@ -1,7 +1,7 @@
 import React from "react";
 import { getComments } from "../../actions/comments";
 import { getOneProduct } from "../../actions/products";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import ProductDetails from "./ProductDetails";
 import Comments from "../Comments/index";
@@ -24,9 +24,9 @@ class ProductDetailsContainer extends React.Component {
           />
           <br /> <br />
           <Comments productId={this.props.match.params.productId} />
-          <Link to="/category" className="return">
+          {/* <Link to="/category" className="return">
             Return
-          </Link>
+          </Link> */}
         </div>
       );
     }
