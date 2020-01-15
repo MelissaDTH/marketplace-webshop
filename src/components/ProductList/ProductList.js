@@ -30,7 +30,13 @@ export default function ProductDetails(props) {
                       <b>€ {product.price}</b>
                     </h5>
                     <p>Color: {product.color}</p>{" "}
-                    <Button variant="warning">Add to Cart</Button>
+                    <Button
+            variant="warning"
+            className="add-to-cart"
+            onClick={() => props.selectProduct(props.id)}
+          >
+            Add to Cart
+          </Button>
                   </div>
                 </Link>{" "}
               </ListGroup.Item>

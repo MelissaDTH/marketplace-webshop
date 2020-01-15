@@ -17,14 +17,19 @@ export default function ProductDetails(props) {
           <h3>
             <b>€ {props.product.price}</b>{" "}
           </h3>
-          <p><b>Color:</b> {props.product.color}</p>
+          <p>
+            <b>Color:</b> {props.product.color}
+          </p>
           <p>
             <b>Seller:{props.product.username}</b>
           </p>
-          <Button variant="warning" className="details-btn">
-              Add to Cart
-            </Button>
-
+          <Button
+            variant="warning"
+            className="add-to-cart"
+            onClick={() => props.selectProduct(props.id)}
+          >
+            Add to Cart
+          </Button>
         </div>
         <br />
         <div className="product-descript">

@@ -1,7 +1,6 @@
 import { ADD_PRODUCT, REMOVE_PRODUCT } from "../actions/cart";
 
 export default (state = [], action = {}) => {
-  console.log("reducer: cart");
   switch (action.type) {
     case ADD_PRODUCT:
       return [...state, { ...action.payload }];

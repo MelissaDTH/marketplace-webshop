@@ -5,8 +5,15 @@ import { getOneProduct } from "../../actions/products";
 import { connect } from "react-redux";
 import ProductDetails from "./ProductDetails";
 import Comments from "../Comments/index";
+import { addProduct } from "../../actions/cart";
 
 class ProductDetailsContainer extends React.Component {
+  
+  selectProduct = id => {
+    console.log('this.props.products', this.props.products);
+    return this.props.addProduct(this.props.products.find(product => product.id === id))
+  }
+
   componentDidMount = () => {
     const { productId } = this.props.match.params;
     this.props.getOneProduct(Number(productId));
@@ -21,6 +28,7 @@ class ProductDetailsContainer extends React.Component {
           <ProductDetails
             product={this.props.product}
             comments={this.props.comments}
+            selectProduct={this.selectProduct}
           />
           <br />
           <Comments productId={this.props.match.params.productId} />
@@ -36,11 +44,12 @@ class ProductDetailsContainer extends React.Component {
 const mapStateToProps = reduxState => {
   return {
     product: reduxState.product,
+    products: reduxState.products,
     comments: reduxState.comments
   };
 };
 
-const mapDispatchToProps = { getOneProduct, getComments };
+const mapDispatchToProps = { getOneProduct, getComments, addProduct };
 
 export default connect(
   mapStateToProps,
