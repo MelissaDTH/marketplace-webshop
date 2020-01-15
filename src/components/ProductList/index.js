@@ -6,7 +6,6 @@ import ProductsList from "./ProductList";
 
 class ProductsListContainer extends React.Component {
   componentDidMount() {
-    // this.props.loadCategory(Number(this.props.match.params.categoryId));
     this.props.getProducts(Number(this.props.match.params.categoryId));
   }
 

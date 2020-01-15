@@ -16,7 +16,7 @@ export default function ProductDetails(props) {
               <ListGroup.Item className="listgroup">
                 <Link
                   className="product-link"
-                  to={`/products/${product.id}`}
+                  to={`/products/${product.id}/comments`}
                 >
                   <div>                    
                     <img src={product.picture} alt="product list"></img>

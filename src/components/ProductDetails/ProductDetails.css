@@ -1,4 +1,30 @@
-.product-div article {
+.details-btn {
+  float: right;
+}
+
+.details {
+  padding: 8px;
+  max-width: 950px;
   margin: 0 auto;
-  border: 1px solid lightgray;
+  line-height: 30px;
+  border-bottom: rgb(245, 173, 48) 3px solid;
+}
+
+.details_container {
+  width: 950px;
+  margin: 0 auto;
+}
+
+.details img {
+  margin: 0 auto;
+}
+
+.details_img-container {
+  text-align: center;
+  border: black solid;
+  background-color: lightgray;
+}
+
+.details-title {
+  text-align: center;
 }

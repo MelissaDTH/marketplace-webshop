@@ -13,7 +13,8 @@ margin: 100px 50px 1000px 20px ;
   float: right;
 }
 .product-div {
-  max-width: 1050px;
+  width: 950px;
+  /* max-width: 1050px; */
   margin: 10px auto;
   background-color: white;
   display: flex;
@@ -27,10 +28,10 @@ margin: 100px 50px 1000px 20px ;
 
 .listgroup img {
   width: 340px;
-  height: 263px;
+  height: 250px;
   float: left;
   border: lightgray 5px solid;
-  margin: -11px 10px -30px -20px;
+  /* margin: -11px 10px -30px -20px; */
 }
 
 .product-div h5 {
