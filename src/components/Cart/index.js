@@ -2,9 +2,21 @@ import React, { Component } from "react";
 import Cart from "./Cart";
 import { connect } from "react-redux";
 import { removeProduct } from "../../actions/cart";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 class CartContainer extends Component {
+  getCartProductDetails = (cart, products) => {
+    console.log(cart);
+    
+    let productsFromCartWithDetails = cart.map(cartProduct => 
+      {return products.find(product => product.id === cartProduct.productId)}    
+    );
+
+    return productsFromCartWithDetails.map((product, index) => {
+      return { ...product, quantity: cart[index].quantity };
+    });
+  };
+
   deleteProduct = id => {
     return this.props.dispatch(removeProduct(id));
   };
@@ -14,38 +26,26 @@ class CartContainer extends Component {
       return <p className="empty">Your cart is currently empty.</p>;
     } else {
       return (
-        <div className="cart">
-          <div className="checkout">
-            <p className="totalAmount">
-              {" "}
-              <b>
-                The total amount is: €
-                {/* {this.props.cart
-                  .map(product => parseInt(product.price))
-                  .reduce((acc, currentProduct) => acc + currentProduct, 0)} */}
-              </b>
-            </p>
-            <Link to="/checkout">
-              <button className="checkout-button">Go to checkout</button>
-            </Link>
-          </div>
-
           <Cart
             deleteProduct={this.deleteProduct}
-            selectedProducts={this.props.cart}
-            path={this.props.match.path}
+            cart={this.props.cart}
+            total={this.props.total}
+            products={this.getCartProductDetails(
+              this.props.cart,
+              this.props.products
+            )}
           />
-        </div>
       );
     }
   }
 }
 
 const mapStateToProps = reduxState => {
-  console.log('cart?', reduxState.cart);
-  
+  console.log("cart?", reduxState.cart);
   return {
-    cart: reduxState.cart
+    cart: reduxState.cart,
+    products: reduxState.products,
+    total: reduxState.cart.total.toFixed(2)
   };
 };
 

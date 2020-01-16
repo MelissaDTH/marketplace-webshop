@@ -13,9 +13,10 @@
 //   }
 // };
 
-import { ADD_PRODUCT, REMOVE_PRODUCT } from "../actions/cart";
+import { ADD_PRODUCT } from "../actions/cart";
+// REMOVE_PRODUCT
 
-import update from "react-addons-update"
+// import update from "react-addons-update"
 const initialState = {
   cart: [],
   total: 0

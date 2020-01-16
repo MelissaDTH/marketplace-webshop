@@ -1,6 +1,6 @@
 import React from "react";
 import "./Cart.css";
-import ProductDetails from "../ProductDetails/ProductDetails";
+// import ProductDetails from "../ProductDetails/ProductDetails";
 
 export default function Cart(props) {
     return (
