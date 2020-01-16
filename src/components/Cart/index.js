@@ -20,9 +20,9 @@ class CartContainer extends Component {
               {" "}
               <b>
                 The total amount is: €
-                {this.props.cart
+                {/* {this.props.cart
                   .map(product => parseInt(product.price))
-                  .reduce((acc, currentProduct) => acc + currentProduct, 0)}
+                  .reduce((acc, currentProduct) => acc + currentProduct, 0)} */}
               </b>
             </p>
             <Link to="/checkout">

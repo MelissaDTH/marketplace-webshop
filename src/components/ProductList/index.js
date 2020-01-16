@@ -6,12 +6,6 @@ import { connect } from "react-redux";
 import ProductsList from "./ProductList";
 
 class ProductsListContainer extends React.Component {
-
-  selectProduct = id => {
-    console.log('this.props.products', this.props.products.find(product => product.productId === id));
-    return this.props.addProduct(this.props.products.find(product => product.productId === id))
-  }
-
   componentDidMount() {
     this.props.getProducts(Number(this.props.match.params.categoryId));
   }

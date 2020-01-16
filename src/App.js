@@ -1,6 +1,7 @@
 import React, { Fragment } from "react";
 import { Route } from "react-router-dom";
 import './App.css'
+
 // Containers
 import NavigationBar from "./components/NavigationBar/NavigationBar";
 import About from "./components/About";

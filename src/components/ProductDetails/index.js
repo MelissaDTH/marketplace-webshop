@@ -8,11 +8,9 @@ import Comments from "../Comments/index";
 import { addProduct } from "../../actions/cart";
 
 class ProductDetailsContainer extends React.Component {
-  
-  selectProduct = id => {
-    console.log('this.props.products', this.props.products);
-    return this.props.addProduct(this.props.products.find(product => product.id === id))
-  }
+  // selectProduct = productId => {
+  //   return this.props.addProduct(this.props.products.find(product => product.productId === productId))
+  // }
 
   componentDidMount = () => {
     const { productId } = this.props.match.params;

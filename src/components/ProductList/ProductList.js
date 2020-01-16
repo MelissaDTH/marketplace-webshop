@@ -2,9 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./ProductList.css";
 import { Card, ListGroup, Button } from "react-bootstrap";
+import { addProduct } from '../../actions/cart'
+import { connect } from "react-redux";
 // import category from '../../reducers/category';
 
-export default function ProductDetails(props) {  
+function ProductList(props) {  
   return (
     <div className="product">
       {!props.products.length ? (
@@ -14,14 +16,19 @@ export default function ProductDetails(props) {
           <div className="product-div" key={product.id}>
             <Card >
               <ListGroup.Item className="listgroup">
-                <Link
+                  <div>  
+                  <Link
+                  className="product-link"
+                  to={`/products/${product.id}/comments`}
+                >                  
+                    <img src={product.picture} alt="product list"></img>
+                    </Link>
+                  </div>
+                  <div className="product-info-div">
+                  <Link
                   className="product-link"
                   to={`/products/${product.id}/comments`}
                 >
-                  <div>                    
-                    <img src={product.picture} alt="product list"></img>
-                  </div>
-                  <div className="product-info-div">
                     <h3>
                       <b>{product.name}</b>
                     </h3>
@@ -30,15 +37,15 @@ export default function ProductDetails(props) {
                       <b>€ {product.price}</b>
                     </h5>
                     <p>Color: {product.color}</p>{" "}
+                    </Link>
                     <Button
             variant="warning"
             className="add-to-cart"
-            onClick={() => props.selectProduct(props.id)}
+            onClick={() => props.addProduct(product)}
           >
             Add to Cart
           </Button>
-                  </div>
-                </Link>{" "}
+                  </div>                
               </ListGroup.Item>
             </Card>
           </div>
@@ -47,3 +54,6 @@ export default function ProductDetails(props) {
     </div>
   );
 }
+
+export default connect(
+	null, { addProduct })(ProductList);

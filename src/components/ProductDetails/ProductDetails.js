@@ -1,8 +1,14 @@
 import React from "react";
 import "./ProductDetails.css";
 import { Button } from "react-bootstrap";
+import { connect } from "react-redux";
+import { addProduct } from '../../actions/cart'
 
-export default function ProductDetails(props) {
+function ProductDetails(props) {
+  console.log('product?', props.product);
+  
+  const product = props.product;
+
   // console.log('product.user', props.product.user)
   return (
     <div className="details">
@@ -26,7 +32,7 @@ export default function ProductDetails(props) {
           <Button
             variant="warning"
             className="add-to-cart"
-            onClick={() => props.selectProduct(props.id)}
+            onClick={() => props.addProduct(product)}
           >
             Add to Cart
           </Button>
@@ -44,3 +50,6 @@ export default function ProductDetails(props) {
     </div>
   );
 }
+
+export default connect(
+	null, { addProduct })(ProductDetails);
