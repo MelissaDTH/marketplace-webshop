@@ -12,7 +12,6 @@ export const login = (username, password) => (dispatch) => {
     .post(`${baseUrl}/login`)
     .send({ username, password })
     .then(response => {
-      console.log("auth action?", response);
       dispatch({
         type: LOGIN_SUCCESS,
         payload: response.body.jwt
@@ -20,14 +19,6 @@ export const login = (username, password) => (dispatch) => {
     })
     .catch(console.error);
 };
-
-// LOGOUT
-export const logout = () => {
-  return ({
-    type: LOGOUT_SUCCESS,
-    payload: null
-  })
-}
 
 // SIGNUP
 export const signup = (username, password) => (dispatch) => {
@@ -58,7 +49,6 @@ export const loginJWT = (username, password) => dispatch => {
     .post(`${baseUrl}/login`)
     .send({ username, password })
     .then(response => {
-      console.log('action?', response, response.body.jwt);
       const action = jwt(response.body.jwt);
 
       dispatch(action);

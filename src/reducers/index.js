@@ -6,6 +6,7 @@ import categories from "./categories";
 import products from "./products";
 import product from "./product";
 import comments from "./comments";
+import cart from "./cart"
 
 export default combineReducers({
   login,
@@ -14,5 +15,6 @@ export default combineReducers({
   categories,
   products,
   product,
-  comments
+  comments,
+  cart
 });

@@ -1,14 +1,20 @@
 import React from "react";
 import { getComments } from "../../actions/comments";
 import { getOneProduct } from "../../actions/products";
+// import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import ProductDetails from "./ProductDetails";
+import Comments from "../Comments/index";
+import { addProduct } from "../../actions/cart";
 
 class ProductDetailsContainer extends React.Component {
+  // selectProduct = productId => {
+  //   return this.props.addProduct(this.props.products.find(product => product.productId === productId))
+  // }
+
   componentDidMount = () => {
-    // const { categoryId } = this.props.match.params;
-    this.props.getOneProduct(Number(this.props.match.params.productId));
-    this.props.getComments(Number(this.props.match.params.productId));
+    const { productId } = this.props.match.params;
+    this.props.getOneProduct(Number(productId));
   };
 
   render() {
@@ -20,7 +26,13 @@ class ProductDetailsContainer extends React.Component {
           <ProductDetails
             product={this.props.product}
             comments={this.props.comments}
+            selectProduct={this.selectProduct}
           />
+          <br />
+          <Comments productId={this.props.match.params.productId} />
+          {/* <Link to="/category" className="return">
+            Return
+          </Link> */}
         </div>
       );
     }
@@ -28,15 +40,14 @@ class ProductDetailsContainer extends React.Component {
 }
 
 const mapStateToProps = reduxState => {
-  console.log("ONE product?", reduxState.product);
-
   return {
     product: reduxState.product,
+    products: reduxState.products,
     comments: reduxState.comments
   };
 };
 
-const mapDispatchToProps = { getOneProduct, getComments };
+const mapDispatchToProps = { getOneProduct, getComments, addProduct };
 
 export default connect(
   mapStateToProps,

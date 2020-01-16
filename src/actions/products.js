@@ -33,7 +33,6 @@ function OneProduct(product) {
 export const getOneProduct = productId => dispatch => {
   request(`${baseUrl}/products/${productId}`)
     .then(response => {
-      console.log("response test", response);
       const action = OneProduct(response.body);
       dispatch(action);
     })

@@ -1,0 +1,9 @@
+.comments-div {
+  max-width: 950px;
+  margin: 0 auto;
+  border-bottom: lightgray 2px solid;
+}
+
+.comment-user {
+  color: rgb(245, 173, 48);
+}

@@ -1,6 +1,7 @@
 import React, { Fragment } from "react";
 import { Route } from "react-router-dom";
 import './App.css'
+
 // Containers
 import NavigationBar from "./components/NavigationBar/NavigationBar";
 import About from "./components/About";
@@ -13,6 +14,7 @@ import LoginSuccess from "./components/Authorization/Login/LoginSuccess";
 import CategoryList from "./components/Category";
 import ProductList from "./components/ProductList";
 import ProductDetails from "./components/ProductDetails";
+import Cart from "./components/Cart/";
 
 function App() {
   return (
@@ -27,7 +29,8 @@ function App() {
       <Route path="/login" component={LoginContainer} />
       <Route path="/category/" exact component={CategoryList} />
       <Route path="/category/:categoryId/" exact component={ProductList} />
-      <Route path="/products/:productId/" exact component={ProductDetails} />
+      <Route path="/products/:productId/comments" exact component={ProductDetails} />
+      <Route path="/cart" component={Cart} />
       <Footer />
     </Fragment>
     </div>

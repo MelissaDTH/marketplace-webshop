@@ -13,20 +13,14 @@ function allComments (comments) {
   }
 }
 
-export const getComments = () => (dispatch, getState) => {
-  const state = getState()
-  const { comments, products } = state
-
-  if (!comments.length) {
-    request(`${baseUrl}/products/${products.id}/comments`)
-      .then(response => {
-        const action = allComments(response.body)
-
-        dispatch(action)
-      })
-      .catch(console.error)
-  }
-}
+export const getComments = productId => dispatch => {
+  request(`${baseUrl}/products/${productId}/comments`)
+    .then(response => {
+      const action = allComments(response.body);
+      dispatch(action);
+    })
+    .catch(console.error);
+};
 
 // CREATE NEW COMMENT
 function newComment (comment) {
