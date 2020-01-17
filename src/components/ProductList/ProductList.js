@@ -14,7 +14,7 @@ function ProductList(props) {
       ) : (
         props.products.map(product => (
           <div className="product-div" key={product.id}>
-            <Card >
+            <Card>
               <ListGroup.Item className="listgroup">
                   <div>  
                   <Link

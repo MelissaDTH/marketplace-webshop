@@ -7,7 +7,9 @@ export function addProduct(product) {
     type: ADD_PRODUCT,
     payload: { 
       productId: product.id, 
-      price: product.price 
+      price: product.price,
+      name: product.name,
+      picture: product.picture
     }
   };
 }

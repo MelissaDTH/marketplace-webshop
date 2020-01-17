@@ -5,18 +5,6 @@ import { removeProduct } from "../../actions/cart";
 // import { Link } from "react-router-dom";
 
 class CartContainer extends Component {
-  getCartProductDetails = (cart, products) => {
-    console.log(cart);
-    
-    let productsFromCartWithDetails = cart.map(cartProduct => 
-      {return products.find(product => product.id === cartProduct.productId)}    
-    );
-
-    return productsFromCartWithDetails.map((product, index) => {
-      return { ...product, quantity: cart[index].quantity };
-    });
-  };
-
   deleteProduct = id => {
     return this.props.dispatch(removeProduct(id));
   };
@@ -30,10 +18,6 @@ class CartContainer extends Component {
             deleteProduct={this.deleteProduct}
             cart={this.props.cart}
             total={this.props.total}
-            products={this.getCartProductDetails(
-              this.props.cart,
-              this.props.products
-            )}
           />
       );
     }
@@ -41,10 +25,9 @@ class CartContainer extends Component {
 }
 
 const mapStateToProps = reduxState => {
-  console.log("cart?", reduxState.cart);
   return {
     cart: reduxState.cart,
-    products: reduxState.products,
+    // products: reduxState.products,
     total: reduxState.cart.total.toFixed(2)
   };
 };
