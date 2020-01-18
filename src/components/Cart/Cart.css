@@ -1,9 +1,9 @@
-.cart h1 {
+.cart-title {
   text-align: center;
   line-height: 50px; 
   margin: 10px 10px 20px 30px; 
   color: rgb(245, 173, 48);
-
+  padding: 30px;
 }
 
 .product-image-cart {
@@ -24,7 +24,7 @@
 
 .total-amount {
   text-align: center;
-  color: rgb(245, 173, 48);
+  color: rgb(0, 0, 0);
   line-height: 50px;  
 
 }
@@ -35,4 +35,10 @@
 
 .trash-icon {
   float: right;
+}
+
+.empty-cart {
+  text-align: center;
+  margin: 50px 50px 50px;
+  padding: 100px;
 }

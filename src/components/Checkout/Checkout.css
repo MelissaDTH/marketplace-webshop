@@ -1,0 +1,14 @@
+.totalAmount-checkout {
+  text-align: center;
+  color: rgb(0, 0, 0);
+
+}
+
+.checkout {
+  max-width: 1050px;
+  margin: 10px auto;
+  background-color: white;
+  justify-content: space-between;
+  line-height: 35px;  
+
+}

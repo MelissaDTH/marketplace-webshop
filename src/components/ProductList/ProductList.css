@@ -47,7 +47,7 @@ margin: 100px 50px 1000px 20px ;
 
 .product-link:hover {
   text-decoration: none;
-  color: rgb(50, 50, 50);
+  color: rgb(69, 69, 69);
 }
 
 @media only screen and (max-width: 762px) {

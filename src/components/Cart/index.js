@@ -3,27 +3,26 @@ import Cart from "./Cart";
 import { connect } from "react-redux";
 
 class CartContainer extends Component {
-  // deleteProduct = id => {
-  //   return this.props.dispatch(removeProduct(id));
-  // };
-
   render() {
-    if (this.props.cart.length === 0) {
-      return <p className="empty">Your cart is currently empty.</p>;
-    } else {
+    if (this.props.cart.total === 0) {
       return (
-          <Cart
-            cart={this.props.cart}
-            total={this.props.total}
-          />
+        <div>
+          <h1 className="cart-title">
+            <b>Shopping Cart</b>
+          </h1>
+          <h3 className="empty-cart">Your cart is currently empty.</h3>
+        </div>
       );
+    } else {
+      return <Cart 
+                cart={this.props.cart} 
+                total={this.props.total} 
+              />;
     }
   }
 }
 
 const mapStateToProps = reduxState => {
-  console.log('CART:', reduxState.cart);
-  
   return {
     cart: reduxState.cart,
     total: reduxState.cart.total.toFixed(2)

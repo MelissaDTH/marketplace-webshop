@@ -12,14 +12,12 @@ import "./Cart.css";
 function Cart(props) {
   const { cart } = props.cart;
   const cartProducts = Object.values(cart);
-  // console.log("props?", props);
 
   return (
     <div className="cart">
-      <h1>
+      <h2 className="cart-title">
         <b>Shopping Cart</b>
-      </h1>
-
+      </h2>
       <div className="cart-products">
         {cartProducts.map(product => (
           <div key={product.productId}>
@@ -50,13 +48,18 @@ function Cart(props) {
                 </h5>
               </ListGroup.Item>
             </Card>
+            <br />
+
           </div>
         ))}
         <h4 className="total-amount">
           <b>TOTAL: € {props.total} </b>
         </h4>
         <Link to="/checkout">
-          <button className="checkout-button">Go to checkout</button>
+        <Button type="submit" variant="warning" className="checkout-btn">
+            {" "}
+            Go to checkout
+          </Button>
         </Link>
       </div>
     </div>

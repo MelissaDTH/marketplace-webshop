@@ -6,9 +6,12 @@ import { addProduct } from '../../actions/cart'
 import { connect } from "react-redux";
 // import category from '../../reducers/category';
 
-function ProductList(props) {  
+function ProductList(props) { 
+  console.log(props);
+   
   return (
     <div className="product">
+      <h1>Category {props.category.name}</h1>
       {!props.products.length ? (
         <h2>Loading...</h2>
       ) : (
