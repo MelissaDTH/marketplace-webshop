@@ -48,7 +48,7 @@ This webshop was created by me for a final exam in week 8 of the Codaisseur Acad
   * It can redirect to all the categories
   * It has a Drop down where all categories are shown and clickable
   * You can sign up and login
-  * You can go to the shopping cart (under construction)
+  * You can go to the shopping cart
 - There is a **footer**
 - The webshop contains a **homepage**, where different categories are shown 
 - These categories can be visited by clicking on them or using the navbar
@@ -70,8 +70,6 @@ This webshop was created by me for a final exam in week 8 of the Codaisseur Acad
 
 ## :construction: Still under construction :construction:
 
- * The shopping cart is not fully operating
- * Because of the incomplete shopping cart, the checkout page with shipping information is not reachable yet
  * Logged in customers can not add a product or comment yet
  * Let the footer stick to the bottom! 
 
