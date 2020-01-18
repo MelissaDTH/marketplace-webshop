@@ -1,13 +1,11 @@
 import React, { Component } from "react";
 import Cart from "./Cart";
 import { connect } from "react-redux";
-import { removeProduct } from "../../actions/cart";
-// import { Link } from "react-router-dom";
 
 class CartContainer extends Component {
-  deleteProduct = id => {
-    return this.props.dispatch(removeProduct(id));
-  };
+  // deleteProduct = id => {
+  //   return this.props.dispatch(removeProduct(id));
+  // };
 
   render() {
     if (this.props.cart.length === 0) {
@@ -15,7 +13,6 @@ class CartContainer extends Component {
     } else {
       return (
           <Cart
-            deleteProduct={this.deleteProduct}
             cart={this.props.cart}
             total={this.props.total}
           />
@@ -25,9 +22,10 @@ class CartContainer extends Component {
 }
 
 const mapStateToProps = reduxState => {
+  console.log('CART:', reduxState.cart);
+  
   return {
     cart: reduxState.cart,
-    // products: reduxState.products,
     total: reduxState.cart.total.toFixed(2)
   };
 };

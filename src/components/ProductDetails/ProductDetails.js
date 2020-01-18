@@ -5,29 +5,27 @@ import { connect } from "react-redux";
 import { addProduct } from '../../actions/cart'
 
 function ProductDetails(props) {
-  console.log('product?', props.product);
-  
+  // console.log('product?', props.product, props.product.user.username);
   const product = props.product;
 
-  // console.log('product.user', props.product.user)
   return (
     <div className="details">
       <div className="details_container">
         <div className="details_img-container">
-          <img src={props.product.picture} height={250} alt="product" />
+          <img src={product.picture} height={250} alt="product" />
         </div>
         <div className="details__info">
           <h1 className="details-title">
-            <b>{props.product.name}</b>
+            <b>{product.name}</b>
           </h1>
           <h3>
-            <b>€ {props.product.price}</b>{" "}
+            <b>€ {product.price}</b>{" "}
           </h3>
           <p>
-            <b>Color:</b> {props.product.color}
+            <b>Color:</b> {product.color}
           </p>
           <p>
-            <b>Seller:{props.product.username}</b>
+            <b>Seller:</b> {props.product.user.username}
           </p>
           <Button
             variant="warning"

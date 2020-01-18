@@ -19,7 +19,7 @@
     margin: 10px auto;
     background-color: white;
     justify-content: space-between;
-    line-height: 20px;  
+    line-height: 15px;  
 }
 
 .total-amount {
@@ -31,4 +31,8 @@
 
 .checkout-button {
   margin: 0 auto;
+}
+
+.trash-icon {
+  float: right;
 }

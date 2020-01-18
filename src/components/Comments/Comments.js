@@ -8,7 +8,7 @@ export default function Comments(props) {
       <h3>Comments</h3>
 
       {!props.comments.length ? (
-        <h6><i>Loading...</i></h6>
+        <h6><i>There are no comments for this product</i></h6>
       ) : (
         props.comments.map(comments => (
           <div className="comments-card-container" key={comments.id}>

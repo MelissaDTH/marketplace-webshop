@@ -11,7 +11,7 @@ export default function CategoriesList(props) {
         {!props.categories.length
           ? "Loading..."
           : props.categories.map(category => (
-              <div className="cat-list-card">
+              <div className="cat-list-card" key={category.id}>
                   <Card>
                     <Link to={`/category/${category.id}`} className="image-card-link">
                       <Card.Img variant="top" src={category.picture} />

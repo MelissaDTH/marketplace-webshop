@@ -34,9 +34,9 @@ function ProductList(props) {
                     </h3>
                     <p className="product-descr">{product.description}</p>
                     <h5>
-                      <b>€ {product.price}</b>
+                      <b>€ {product.price.toFixed(2)}</b>
                     </h5>
-                    <p>Color: {product.color}</p>{" "}
+                    <p><i>Color: {product.color}</i></p>{" "}
                     </Link>
                     <Button
             variant="warning"
