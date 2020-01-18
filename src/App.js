@@ -15,6 +15,7 @@ import CategoryList from "./components/Category";
 import ProductList from "./components/ProductList";
 import ProductDetails from "./components/ProductDetails";
 import Cart from "./components/Cart/";
+import Checkout from "./components/Checkout/Checkout";
 
 function App() {
   return (
@@ -22,15 +23,16 @@ function App() {
     <Fragment>
       <NavigationBar />
       <Route path="/" exact component={HomeContainer} />
-      <Route path="/about" component={About} />
-      <Route path="/signup-success" component={SignupSuccess} />
-      <Route path="/login-success" component={LoginSuccess} />
-      <Route path="/signup" component={Signup} />
-      <Route path="/login" component={LoginContainer} />
+      <Route path="/about/" component={About} />
+      <Route path="/signup-success/" component={SignupSuccess} />
+      <Route path="/login-success/" component={LoginSuccess} />
+      <Route path="/signup/" component={Signup} />
+      <Route path="/login/" component={LoginContainer} />
       <Route path="/category/" exact component={CategoryList} />
       <Route path="/category/:categoryId/" exact component={ProductList} />
-      <Route path="/products/:productId/comments" exact component={ProductDetails} />
-      <Route path="/cart" component={Cart} />
+      <Route path="/products/:productId/comments/" exact component={ProductDetails} />
+      <Route path="/cart/" component={Cart} />
+      <Route path="/checkout/" component={Checkout } />
       <Footer />
     </Fragment>
     </div>

@@ -5,9 +5,12 @@ export function addProduct(product) {
   console.log("action: Add product to cart");
   return {
     type: ADD_PRODUCT,
-    payload: { 
-      productId: product.id, 
-      price: product.price 
+    payload: {
+      productId: product.id,
+      price: product.price,
+      name: product.name,
+      color: product.color,
+      picture: product.picture
     }
   };
 }
@@ -16,9 +19,12 @@ export function removeProduct(product) {
   console.log("action: remove PRODUCT from cart");
   return {
     type: REMOVE_PRODUCT,
-    payload: { 
-      productId: product.id, 
-      price: product.price 
-    }
+    payload: {
+      productId: product.productId,
+      price: product.price,
+      name: product.name,
+      color: product.color,
+      picture: product.picture
+        }
   };
 }

@@ -1,0 +1,44 @@
+.cart-title {
+  text-align: center;
+  line-height: 50px; 
+  margin: 10px 10px 20px 30px; 
+  color: rgb(245, 173, 48);
+  padding: 30px;
+}
+
+.product-image-cart {
+  float: left;
+}
+
+.cart-products h5 {
+  color: rgb(245, 173, 48);
+}
+
+.cart-products {
+    max-width: 1050px;
+    margin: 10px auto;
+    background-color: white;
+    justify-content: space-between;
+    line-height: 15px;  
+}
+
+.total-amount {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  line-height: 50px;  
+
+}
+
+.checkout-button {
+  margin: 0 auto;
+}
+
+.trash-icon {
+  float: right;
+}
+
+.empty-cart {
+  text-align: center;
+  margin: 50px 50px 50px;
+  padding: 100px;
+}

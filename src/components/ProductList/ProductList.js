@@ -6,15 +6,16 @@ import { addProduct } from '../../actions/cart'
 import { connect } from "react-redux";
 // import category from '../../reducers/category';
 
-function ProductList(props) {  
+function ProductList(props) { 
   return (
     <div className="product">
+      <h1>Category {props.category.name}</h1>
       {!props.products.length ? (
         <h2>Loading...</h2>
       ) : (
         props.products.map(product => (
           <div className="product-div" key={product.id}>
-            <Card >
+            <Card>
               <ListGroup.Item className="listgroup">
                   <div>  
                   <Link
@@ -34,9 +35,9 @@ function ProductList(props) {
                     </h3>
                     <p className="product-descr">{product.description}</p>
                     <h5>
-                      <b>€ {product.price}</b>
+                      <b>€ {product.price.toFixed(2)}</b>
                     </h5>
-                    <p>Color: {product.color}</p>{" "}
+                    <p><i>Color: {product.color}</i></p>{" "}
                     </Link>
                     <Button
             variant="warning"

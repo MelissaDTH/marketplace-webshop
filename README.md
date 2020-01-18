@@ -1,7 +1,9 @@
 # :bank: Marketplace: Webshop :bank:
 
 ## What this project is about 
-This webshop was created by me for a final exam in week 8 of the Codaisseur Academy. We initially had to create an application where you can buy tickets for certain events, containing different features. When I passed this exam, I have continued working on it but altered the assignment and the theme of the application (for our teachers so other future students will not be able to use this project). I have changed it to a webshop, gave it a nice styling and cleaned up my code). I have also added features that were not in the assignment, like a shopping cart. The back-end repository can be found here ([Back-end repository](https://github.com/MelissaDTH/marketplace-server.git)).
+
+This webshop was created by me for a final exam in week 8 of the Codaisseur Academy. We initially had to create an application where you can buy tickets for certain events, containing different features and thus we had to work on User Stories. When I passed this exam, I have continued working on it but altered the assignment and the theme of the application. I have changed it to a webshop, gave it a nice styling and cleaned up my code. I have also added features that were not in the assignment, like a shopping cart. The back-end repository can be found here ([Back-end repository](https://github.com/MelissaDTH/marketplace-server.git)).
+
 
 ## Table of contents 
 - **[Technologies used](#technologies-used)**
@@ -48,7 +50,7 @@ This webshop was created by me for a final exam in week 8 of the Codaisseur Acad
   * It can redirect to all the categories
   * It has a Drop down where all categories are shown and clickable
   * You can sign up and login
-  * You can go to the shopping cart (under construction)
+  * You can go to the shopping cart
 - There is a **footer**
 - The webshop contains a **homepage**, where different categories are shown 
 - These categories can be visited by clicking on them or using the navbar
@@ -70,8 +72,6 @@ This webshop was created by me for a final exam in week 8 of the Codaisseur Acad
 
 ## :construction: Still under construction :construction:
 
- * The shopping cart is not fully operating
- * Because of the incomplete shopping cart, the checkout page with shipping information is not reachable yet
  * Logged in customers can not add a product or comment yet
  * Let the footer stick to the bottom! 
 

@@ -8,19 +8,19 @@ import "./CategoryList.css";
 export default function CategoriesList(props) {
   return (
     <div className="category-container">
+      <h1 className='cat-title'> All categories</h1>
         {!props.categories.length
           ? "Loading..."
           : props.categories.map(category => (
-              <div className="cat-list-card">
+              <div className="cat-list-card" key={category.id}>
                   <Card>
                     <Link to={`/category/${category.id}`} className="image-card-link">
                       <Card.Img variant="top" src={category.picture} />
-                      <Card.Body>
-                      <Link to={`/category/${category.id}/`} className="cat-title-link">
-                      <Button variant="warning" className="category-btn">{category.name}</Button>
+                      </Link>
+                      <Link to={`/category/${category.id}/`} className="cat-info-link">
 
-                        {/* <Card.Title className="cat-title"><b>{category.name}</b></Card.Title> */}
-                        </Link>
+                      <Card.Body>
+                      <Button variant="warning" className="category-btn">{category.name}</Button>
                         <Card.Text className="cat-description">{category.description}</Card.Text>
                       </Card.Body>
                       </Link>

@@ -15,9 +15,17 @@
   margin-bottom: 40px;
 }
 
-.cat-title-link:link, .cat-title-link:visited {
+.cat-info-link:link, .cat-info-link:visited {
   text-decoration: none;
-  color: rgb(245, 173, 48);
+  color: rgb(0, 0, 0);
   cursor: pointer;
 }
 
+.cat-info-link:hover {
+  text-decoration: none;
+  color: rgb(69, 69, 69);
+}
+
+.cat-title {
+  line-height: 100px;
+}
