@@ -2,7 +2,7 @@
 
 ## What this project is about 
 
-This webshop was created by me for a final exam in week 8 of the Codaisseur Academy. We initially had to create an application where you can buy tickets for certain events, containing different features and thus we had to work on User Stories. When I passed this exam, I have continued working on it but altered the assignment and the theme of the application. I have changed it to a webshop, gave it a nice styling and cleaned up my code. I have also added features that were not in the assignment, like a shopping cart. The back-end repository can be found here ([Back-end repository](https://github.com/MelissaDTH/marketplace-server.git)).
+This webshop was created by me for the final exam in week 8 of Codaisseur's Code Academy. We initially had to create an application where you can buy tickets for certain events, containing different features and thus we had to work on User Stories. When I passed this exam, I have continued working on it but altered the assignment and the theme of the application so that I was allowed to put this online. I have changed it to a webshop, gave it a nice styling and cleaned up my code. I have also added features that were not in the assignment, like a shopping cart. The back-end repository can be found here ([Back-end repository](https://github.com/MelissaDTH/marketplace-server.git)).
 
 
 ## Table of contents 
