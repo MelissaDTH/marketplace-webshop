@@ -5,7 +5,7 @@ import { addProduct } from "../../actions/cart";
 import { connect } from "react-redux";
 import ProductsList from "./ProductList";
 import { Link } from "react-router-dom";
-// import CreateProduct from '../'
+import CreateProduct from "../CreateProduct";
 
 class ProductsListContainer extends React.Component {
   componentDidMount() {
@@ -24,7 +24,10 @@ class ProductsListContainer extends React.Component {
           <div>
             <h4>Start selling something</h4>
 
-            {/* <CreateProduct categories={this.props.categories} /> */}
+            <CreateProduct
+              categories={this.props.categories}
+              products={this.props.products}
+            />
           </div>
         ) : (
           <div>

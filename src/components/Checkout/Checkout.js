@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from "react";
+import React, { Component } from "react";
 import { connect } from "react-redux";
 import { Col, Form, Button } from "react-bootstrap";
 import "./Checkout.css";

@@ -25,7 +25,7 @@ function ProductDetails(props) {
             <b>Color:</b> {product.color}
           </p>
           <p>
-            <b>Seller:</b> {props.product.user.username}
+            {/* <b>Seller:</b> {props.product.user.username} */}
           </p>
           <Button
             variant="warning"

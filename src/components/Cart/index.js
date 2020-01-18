@@ -14,10 +14,7 @@ class CartContainer extends Component {
         </div>
       );
     } else {
-      return <Cart 
-                cart={this.props.cart} 
-                total={this.props.total} 
-              />;
+      return <Cart cart={this.props.cart} total={this.props.total} />;
     }
   }
 }

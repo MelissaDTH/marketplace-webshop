@@ -7,8 +7,6 @@ import { connect } from "react-redux";
 // import category from '../../reducers/category';
 
 function ProductList(props) { 
-  console.log(props);
-   
   return (
     <div className="product">
       <h1>Category {props.category.name}</h1>
