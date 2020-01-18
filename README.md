@@ -74,6 +74,7 @@ This webshop was created by me for a final exam in week 8 of the Codaisseur Acad
 
  * Logged in customers can not add a product or comment yet
  * Let the footer stick to the bottom! 
+ * Add pagination for when more products are added
 
 ## Project set-up
 <i>Type in your terminal inside the project directory</i>
