@@ -8,10 +8,6 @@ import Comments from "../Comments/index";
 import { addProduct } from "../../actions/cart";
 
 class ProductDetailsContainer extends React.Component {
-  // selectProduct = productId => {
-  //   return this.props.addProduct(this.props.products.find(product => product.productId === productId))
-  // }
-
   componentDidMount = () => {
     const { productId } = this.props.match.params;
     this.props.getOneProduct(Number(productId));
@@ -39,7 +35,7 @@ class ProductDetailsContainer extends React.Component {
   }
 }
 
-const mapStateToProps = reduxState => {
+const mapStateToProps = reduxState => {  
   return {
     product: reduxState.product,
     products: reduxState.products,

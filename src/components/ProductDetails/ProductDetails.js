@@ -5,7 +5,6 @@ import { connect } from "react-redux";
 import { addProduct } from '../../actions/cart'
 
 function ProductDetails(props) {
-  // console.log('product?', props.product, props.product.user.username);
   const product = props.product;
 
   return (

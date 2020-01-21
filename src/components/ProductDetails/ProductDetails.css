@@ -12,7 +12,10 @@
 
 .details_container {
   max-width: 950px;
-  margin: 0 auto;
+  margin: 50px auto;
+  border: lightgrey solid 3px;
+  padding: 10px 10px 30px;
+  line-height: 35px;
 }
 
 .details img {
@@ -20,16 +23,8 @@
   float: right;
 }
 
-/* .details_img-container {
-  text-align: center;
-} */
-
 .details__info {
-  /* padding: 5px 10px 10px 15px; */
   justify-content: space-between;
-
-  
-  /* border: black solid; */
 }
 
 .details-title {

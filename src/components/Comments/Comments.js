@@ -1,5 +1,4 @@
 import React from "react";
-// import { Card } from "react-bootstrap";
 import "./Comments.css";
 
 export default function Comments(props) {
@@ -12,8 +11,6 @@ export default function Comments(props) {
       ) : (
         props.comments.map(comments => (
           <div className="comments-card-container" key={comments.id}>
-            {/* <Card> */}
-            <div className="comments-content">
               <p className="comment-user">
                 <b>{comments.user.username}:</b>
               </p>
@@ -21,8 +18,6 @@ export default function Comments(props) {
                 <i>{comments.comment}</i>
               </p>
             </div>
-            {/* </Card> */}
-          </div>
         ))
       )}
     </div>

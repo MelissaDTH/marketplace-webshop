@@ -5,7 +5,6 @@ This webshop was created by me for a final exam in week 8 of the Codaisseur Acad
 
 ## Table of contents 
 - **[Technologies used](#technologies-used)**
-- **[Goals for this project](#goals-for-this-project)**
 - **[Application features](#application-features)**
 - **[Project set-up](#project-set-up)**
 
@@ -34,10 +33,6 @@ This webshop was created by me for a final exam in week 8 of the Codaisseur Acad
   * jsonwebtoken
   * Nodemon
 
-  
-## Goals for this project
-
-* 
 
 ## Application features
 
