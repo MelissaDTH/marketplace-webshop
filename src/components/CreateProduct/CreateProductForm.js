@@ -21,7 +21,7 @@ return (
       <Form.Control
         type="picture"
         name="picture"
-        placeholder="http://"
+        placeholder="https://"
         onChange={props.onChange}
         value={props.values.picture}
       />
@@ -51,14 +51,14 @@ return (
       <Form.Control
         type="text"
         name="color"
-        placeholder="Add color"
+        placeholder="color"
         onChange={props.onChange}
         value={props.values.color}
       />
     </Form.Group>
 
     <Button variant="warning" type="submit">
-      Create Product
+      Add product to selling list
     </Button>
   </Form>
 );

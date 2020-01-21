@@ -35,7 +35,7 @@ class ProductsListContainer extends React.Component {
             <h3 className='product-sell-title'>Start selling something</h3>
             <Link to="/login">
               {" "}
-              <h4>You have to be logged in to start selling a product</h4>{" "}
+              <h4 className='login-to-sell-link'>Log in here to start selling a product</h4>{" "}
             </Link>
           </div>
         )}

@@ -48,6 +48,7 @@ This webshop was created by me for a final exam in week 8 of the Codaisseur Acad
 - The webshop contains a **homepage**, where different categories are shown 
 - These categories can be visited by clicking on them or using the navbar
 - The products on the webshop are divided in **six categories**. Each category has its own page with the corresponding products and information
+- On the category page, **logged in users can add a product** with a form to sell an item
 - The products all have their own **details page**
 - A product can also be **commented** on, these are shown on the details page
   * These comments were initially in the original exam, but I kept them in to showcase my algorithm that I wrote for it
@@ -65,8 +66,9 @@ This webshop was created by me for a final exam in week 8 of the Codaisseur Acad
 
 ## :construction: Still under construction :construction:
 
- * Logged in customers can not add a product or comment yet
+ * Logged in customers can not add a comment yet
  * Let the footer stick to the bottom! 
+ * Showcase risk properly
 
 ## Project set-up
 <i>Type in your terminal inside the project directory</i>
