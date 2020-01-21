@@ -4,7 +4,7 @@ import "./Comments.css";
 export default function Comments(props) {
   return (
     <div className="comments-div">
-      <h3>Comments</h3>
+      <h3><strong>Comments</strong></h3>
 
       {!props.comments.length ? (
         <h6><i>There are no comments for this product</i></h6>
