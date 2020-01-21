@@ -1,5 +1,6 @@
 import React from "react";
 import { Form, Button } from "react-bootstrap";
+import './CreateProduct.css'
 
 export default function CreateProductForm(props) {
 
@@ -10,13 +11,13 @@ return (
       <Form.Control
         type="name"
         name="name"
-        placeholder="Enter name"
+        placeholder="Enter a name"
         onChange={props.onChange}
         value={props.values.name}
       />
     </Form.Group>
     <Form.Group controlId="formProductPicture">
-      <Form.Label>Add picture</Form.Label>
+      <Form.Label>Add picture (url)</Form.Label>
       <Form.Control
         type="picture"
         name="picture"
@@ -30,13 +31,13 @@ return (
       <Form.Control
         type="price"
         name="price"
-        placeholder="€ 00.00"
+        placeholder="€ "
         onChange={props.onChange}
         value={props.values.price}
       />
     </Form.Group>
     <Form.Group controlId="formProductDescription">
-      <Form.Label>description</Form.Label>
+      <Form.Label>Description</Form.Label>
       <Form.Control
         type="description"
         name="description"
@@ -46,11 +47,11 @@ return (
       />
     </Form.Group>
     <Form.Group controlId="formProductColor">
-      <Form.Label>color</Form.Label>
+      <Form.Label>Color of product</Form.Label>
       <Form.Control
         type="text"
         name="color"
-        placeholder="add color"
+        placeholder="Add color"
         onChange={props.onChange}
         value={props.values.color}
       />

@@ -4,12 +4,11 @@ import "./ProductList.css";
 import { Card, ListGroup, Button } from "react-bootstrap";
 import { addProduct } from "../../actions/cart";
 import { connect } from "react-redux";
-// import category from '../../reducers/category';
 
 function ProductList(props) {
   return (
     <div className="product">
-      <h1 className='cat-title'>Category {props.category.name}</h1>
+      <h1 className='cat-title'>{props.category.name}</h1>
       {!props.products.length ? (
         <h2>Loading...</h2>
       ) : (

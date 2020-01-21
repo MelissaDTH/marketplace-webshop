@@ -22,7 +22,7 @@ class ProductsListContainer extends React.Component {
         />
         {this.props.login ? (
           <div>
-            <h4>Start selling something</h4>
+            <h3 className='product-sell-title'>Start selling something</h3>
 
             <CreateProduct
               category={this.props.category}
@@ -32,7 +32,7 @@ class ProductsListContainer extends React.Component {
           </div>
         ) : (
           <div>
-            <h4>Start selling something</h4>
+            <h3 className='product-sell-title'>Start selling something</h3>
             <Link to="/login">
               {" "}
               <h4>You have to be logged in to start selling a product</h4>{" "}

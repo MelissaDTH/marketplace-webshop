@@ -1,0 +1,10 @@
+.create-product-form {
+  max-width: 1050px;
+  margin: 10px auto;
+  /* justify-content: space-between; */
+  line-height: 30px;
+}
+
+.form-label {
+  font-weight: bolder;
+}

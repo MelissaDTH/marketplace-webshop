@@ -12,6 +12,7 @@ margin: 100px 50px 1000px 20px ;
 .product-info-div button {
   float: right;
 }
+
 .product-div {
   /* width: 950px; */
   max-width: 1050px;
@@ -50,8 +51,10 @@ margin: 100px 50px 1000px 20px ;
   color: rgb(69, 69, 69);
 }
 
-.cat-title {
+.product-sell-title {
   text-align: center;
+  margin: 45px;
+  font-weight: bold;
 }
 
 @media only screen and (max-width: 762px) {
