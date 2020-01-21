@@ -35,13 +35,10 @@ const categoryFetched = category => ({
 });
 
 export const loadCategory = categoryId => (dispatch, getState) => {
-  // console.log("getState", getState().category);
-
   if (getState().category.length) return;
 
   request(`${baseUrl}/category/${categoryId}`)
     .then(response => {
-      // console.log("action", response);
       dispatch(categoryFetched(response.body));
     })
     .catch(console.error);

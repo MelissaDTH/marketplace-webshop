@@ -1,56 +1,65 @@
 import React from "react";
-import { Button } from "react-bootstrap";
+import { Form, Button } from "react-bootstrap";
+import './CreateProduct.css'
 
 export default function CreateProductForm(props) {
-  if (!props.products) return "Loading";
 
-  return (
-    <div>
-      <h4>Add a new Product</h4>
-      <br />
-      <form onSubmit={props.onSubmit}>
-        Product Name
-        <br />
-        <input
-          name="name"
-          type="text"
-          value={props.values.name}
-          onChange={props.onChange}
-          placeholder="Enter event name"
-        ></input>
-                <input
-          name="picture"
-          type="text"
-          value={props.values.picture}
-          onChange={props.onChange}
-          placeholder="Enter pic"
-        ></input>
-        <input
-          name="price"
-          type="text"
-          value={props.values.price}
-          onChange={props.onChange}
-          placeholder="Enter event price"
-        ></input>
-        <input
-          name="description"
-          type="text"
-          value={props.values.description}
-          onChange={props.onChange}
-          placeholder="Enter event description"
-        ></input>
-        <input
-          name="color"
-          type="text"
-          value={props.values.color}
-          onChange={props.onChange}
-          placeholder="Enter event color"
-        ></input>
-        <Button variant="primary" type="submit">
-          Submit
-        </Button>
-        <br />
-      </form>
-    </div>
-  );
+return (
+  <Form onSubmit={props.onSubmit} className="create-product-form">
+    <Form.Group controlId="formProductName">
+      <Form.Label>Product name</Form.Label>
+      <Form.Control
+        type="name"
+        name="name"
+        placeholder="Enter a name"
+        onChange={props.onChange}
+        value={props.values.name}
+      />
+    </Form.Group>
+    <Form.Group controlId="formProductPicture">
+      <Form.Label>Add picture (url)</Form.Label>
+      <Form.Control
+        type="picture"
+        name="picture"
+        placeholder="https://"
+        onChange={props.onChange}
+        value={props.values.picture}
+      />
+    </Form.Group>
+    <Form.Group controlId="formProductPrice">
+      <Form.Label>Price</Form.Label>
+      <Form.Control
+        type="price"
+        name="price"
+        placeholder="€ "
+        onChange={props.onChange}
+        value={props.values.price}
+      />
+    </Form.Group>
+    <Form.Group controlId="formProductDescription">
+      <Form.Label>Description</Form.Label>
+      <Form.Control
+        type="description"
+        name="description"
+        placeholder="Why are you selling this?"
+        onChange={props.onChange}
+        value={props.values.description}
+      />
+    </Form.Group>
+    <Form.Group controlId="formProductColor">
+      <Form.Label>Color of product</Form.Label>
+      <Form.Control
+        type="text"
+        name="color"
+        placeholder="color"
+        onChange={props.onChange}
+        value={props.values.color}
+      />
+    </Form.Group>
+
+    <Button variant="warning" type="submit">
+      Add product to selling list
+    </Button>
+  </Form>
+);
 }

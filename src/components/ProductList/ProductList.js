@@ -2,14 +2,13 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./ProductList.css";
 import { Card, ListGroup, Button } from "react-bootstrap";
-import { addProduct } from '../../actions/cart'
+import { addProduct } from "../../actions/cart";
 import { connect } from "react-redux";
-// import category from '../../reducers/category';
 
-function ProductList(props) { 
+function ProductList(props) {
   return (
     <div className="product">
-      <h1>Category {props.category.name}</h1>
+      <h1 className='cat-title'>{props.category.name}</h1>
       {!props.products.length ? (
         <h2>Loading...</h2>
       ) : (
@@ -17,36 +16,40 @@ function ProductList(props) {
           <div className="product-div" key={product.id}>
             <Card>
               <ListGroup.Item className="listgroup">
-                  <div>  
+                <div>
                   <Link
-                  className="product-link"
-                  to={`/products/${product.id}/comments`}
-                >                  
+                    className="product-link"
+                    to={`/products/${product.id}/comments`}
+                  >
                     <img src={product.picture} alt="product list"></img>
-                    </Link>
-                  </div>
-                  <div className="product-info-div">
+                  </Link>
+                </div>
+                <div className="product-info-div">
                   <Link
-                  className="product-link"
-                  to={`/products/${product.id}/comments`}
-                >
+                    className="product-link"
+                    to={`/products/${product.id}/comments`}
+                  >
                     <h3>
                       <b>{product.name}</b>
                     </h3>
-                    <p className="product-descr">{product.description}</p>
+                    <div className='product-descr'>
+                    <p>{product.description}</p>
                     <h5>
                       <b>€ {product.price.toFixed(2)}</b>
                     </h5>
-                    <p><i>Color: {product.color}</i></p>{" "}
-                    </Link>
-                    <Button
-            variant="warning"
-            className="add-to-cart"
-            onClick={() => props.addProduct(product)}
-          >
-            Add to Cart
-          </Button>
-                  </div>                
+                    <p>
+                      <i>Color: {product.color}</i>
+                      <Button
+                        variant="warning"
+                        className="add-to-cart"
+                        onClick={() => props.addProduct(product)}
+                      >
+                        Add to Cart
+                      </Button>
+                    </p>{" "}
+                    </div>
+                  </Link>
+                </div>
               </ListGroup.Item>
             </Card>
           </div>
@@ -56,5 +59,4 @@ function ProductList(props) {
   );
 }
 
-export default connect(
-	null, { addProduct })(ProductList);
+export default connect(null, { addProduct })(ProductList);

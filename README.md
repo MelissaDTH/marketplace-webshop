@@ -7,7 +7,6 @@ This webshop was created by me for the final exam in week 8 of Codaisseur's Code
 
 ## Table of contents 
 - **[Technologies used](#technologies-used)**
-- **[Goals for this project](#goals-for-this-project)**
 - **[Application features](#application-features)**
 - **[Project set-up](#project-set-up)**
 
@@ -36,10 +35,6 @@ This webshop was created by me for the final exam in week 8 of Codaisseur's Code
   * jsonwebtoken
   * Nodemon
 
-  
-## Goals for this project
-
-* 
 
 ## Application features
 
@@ -55,6 +50,7 @@ This webshop was created by me for the final exam in week 8 of Codaisseur's Code
 - The webshop contains a **homepage**, where different categories are shown 
 - These categories can be visited by clicking on them or using the navbar
 - The products on the webshop are divided in **six categories**. Each category has its own page with the corresponding products and information
+- On the category page, **logged in users can add a product** with a form to sell an item
 - The products all have their own **details page**
 - A product can also be **commented** on, these are shown on the details page
   * These comments were initially in the original exam, but I kept them in to showcase my algorithm that I wrote for it
@@ -72,9 +68,11 @@ This webshop was created by me for the final exam in week 8 of Codaisseur's Code
 
 ## :construction: Still under construction :construction:
 
- * Logged in customers can not add a product or comment yet
+ * Logged in customers can not add a comment yet
  * Let the footer stick to the bottom! 
+ * Showcase risk algorithm properly
  * Add pagination for when more products are added
+
 
 ## Project set-up
 <i>Type in your terminal inside the project directory</i>

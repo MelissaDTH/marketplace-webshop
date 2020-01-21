@@ -48,15 +48,15 @@ function newProduct(payload) {
   };
 }
 
-export const createProduct = (name, picture, price, description, color, categoryId) => dispatch => getState => {
-  const state = getState()
-  const { login } = state
+export const createProduct = (name, picture, price, description, color, categoryId, login) => (dispatch) => {
 
   request
     .post(`${baseUrl}/category/${categoryId}/products/`)
     .set("Authorization", `Bearer ${login}`)
-    .send({name, picture, price, description, color, categoryId})
+    .send({name, picture, price, description, color, categoryId, login})
     .then(response => {      
+      console.log('whats the action response?', response);
+      
       const action = newProduct(response.body)
 
       dispatch(action)

@@ -9,6 +9,7 @@ import CreateProduct from "../CreateProduct";
 
 class ProductsListContainer extends React.Component {
   componentDidMount() {
+    this.props.loadCategory(Number(this.props.match.params.categoryId));
     this.props.getProducts(Number(this.props.match.params.categoryId));
   }
 
@@ -18,23 +19,23 @@ class ProductsListContainer extends React.Component {
         <ProductsList
           category={this.props.category}
           products={this.props.products}
-          selectProduct={this.selectProduct}
         />
         {this.props.login ? (
           <div>
-            <h4>Start selling something</h4>
+            <h3 className='product-sell-title'>Start selling something</h3>
 
             <CreateProduct
+              category={this.props.category}
               categories={this.props.categories}
               products={this.props.products}
             />
           </div>
         ) : (
           <div>
-            <h4>Start selling something</h4>
+            <h3 className='product-sell-title'>Start selling something</h3>
             <Link to="/login">
               {" "}
-              <h4>You have to be logged in to start selling a product</h4>{" "}
+              <h4 className='login-to-sell-link'>Log in here to start selling a product</h4>{" "}
             </Link>
           </div>
         )}

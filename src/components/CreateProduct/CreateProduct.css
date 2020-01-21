@@ -1,0 +1,12 @@
+.create-product-form {
+  max-width: 850px;
+  margin: 10px auto;
+  line-height: 30px;
+  border: lightgrey 2px solid;
+  padding: 50px;
+  background: rgb(236, 236, 236);
+}
+
+.form-label {
+  font-weight: bolder;
+}
