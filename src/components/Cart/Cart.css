@@ -29,8 +29,14 @@
 
 }
 
-.checkout-button {
-  margin: 0 auto;
+.cart button {
+  text-align: center;
+}
+
+.checkout-btn {
+ text-align: center;
+  line-height: 50px;
+  cursor: pointer;
 }
 
 .trash-icon {

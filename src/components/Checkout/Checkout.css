@@ -10,5 +10,6 @@
   background-color: white;
   justify-content: space-between;
   line-height: 35px;  
-
+  border: rgb(210, 210, 210) 2px solid;
+  padding: 10px;
 }

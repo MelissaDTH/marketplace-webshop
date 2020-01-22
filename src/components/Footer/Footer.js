@@ -7,6 +7,7 @@ import "./Footer.css";
 function Footer() {
   return (
     <Fragment>
+      <footer className='footer-foot'> 
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" className='footer'>
         <Navbar.Brand href="/">Marketplace</Navbar.Brand>
         <Nav className="mr-auto">
@@ -29,6 +30,7 @@ function Footer() {
           </Button>
         </Nav>
       </Navbar>
+      </footer>
     </Fragment>
   );
 }

@@ -64,11 +64,12 @@ class CheckoutContainer extends Component {
             {" "}
             <b>TOTAL: €{this.props.total}</b>
           </h4>
-
+          <div className='checkout-btn'>
           <Button type="submit" variant="warning" className="submit-checkout">
             {" "}
             Submit
           </Button>
+          </div>
         </Form>
       </div>
     );

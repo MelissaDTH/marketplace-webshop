@@ -55,12 +55,14 @@ function Cart(props) {
         <h4 className="total-amount">
           <b>TOTAL: € {props.total} </b>
         </h4>
+        <div className="checkout-btn">
         <Link to="/checkout">
-        <Button type="submit" variant="warning" className="checkout-btn">
+        <Button type="submit" variant="warning" >
             {" "}
             Go to checkout
           </Button>
         </Link>
+        </div>
       </div>
     </div>
   );

@@ -35,8 +35,8 @@ function App() {
       <Route path="/products/:productId/comments/" exact component={ProductDetails} />
       <Route path="/cart/" component={Cart} />
       <Route path="/checkout/" component={Checkout } />
-      <Footer />
       </ScrollToTop>
+      <Footer />
     </Fragment>
     </div>
   );
