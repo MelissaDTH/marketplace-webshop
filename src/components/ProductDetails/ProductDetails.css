@@ -10,11 +10,8 @@
   /* border: grey 1px solid; */
 }
 
-.details_container {
-  
-}
 
-.details_info {
+/* .details_info {
   max-width: 950px;
   margin: 50px auto;
   border: lightgrey solid 3px;
@@ -23,7 +20,7 @@
   background-color: white;
   text-align: center;
   justify-content: space-around;
-}
+} */
 
 .details_img-container img {
   margin: 0 auto;
@@ -55,7 +52,7 @@
   color: green;
 }
 
-.product-descript {
+.details_container {
   max-width: 950px;
   margin: 50px auto;
   border: lightgrey solid 3px;

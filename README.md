@@ -66,23 +66,25 @@ This webshop was created by me for the final exam in week 8 of Codaisseur's Code
 - The products all have their own **details page**
 - A product can also be **commented** on, these are shown on the details page
   * These comments were initially in the original exam, but I kept them in to showcase my algorithm that I wrote for it
-- The webshop contains an **Risk algorithm**:
-  * 10% will be added to the risk if the product is the user's only product
-  * 10% will be deducted from the risk if a product was added during business hours (09:00 - 17:00)
-    * Opposite of that, 10% will be added if it was not during these hours
-  * If there are >3 comments on the product, 5% risk will be added
-  * There is a minimal risk of 5% and a maximum of 95%.
-
 - Customers can add products to a **shopping cart**, which is a separate page that shows which products are selected as well as the **total price**
 - When there are products in that cart, a button that directs the customer to the **checkout page** becomes available. Over there, they can fill in their personal information. No further action or redirection to an actual payment page is yet available here
 - The webshop has an overall styling, mostly done with CSS and React-Bootstrap
 
+- Finally, the webshop also has a risk algorithm. This was part of the final assignment, so it isn't fully applicable for this webshop but has been added to demo it.
+
+#### Risk algorithm
+Products can be added by users, so it can always have a certain risk to it when buying. In this webshop, an algorithm will calculate the amount of risk the product has based upon:
+  * There is a minimal risk of 5% and a maximum of 95%.
+  * 10% will be added to the risk if the product is the user's only product
+  * 10% will be deducted from the risk if a product was added during business hours (09:00 - 17:00)
+    * Opposite of that, 10% will be added if it was not during these hours
+  * If there are >3 comments on the product, 10% risk will be added
 
 ## :construction: Still under construction :construction:
 
- * Logged in customers can not add a comment yet
+ * Logged in customers can not edit a product
+ * Logged in customers can not add + edit a comment yet
  * Let the footer stick to the bottom! 
- * Showcase risk algorithm properly
  * Add pagination for when more products are added
 
 

@@ -38,6 +38,7 @@ function ProductDetails(props) {
             onClick={() => props.addProduct(product)}
           > Add to Cart
           </Button>
+          <hr />
         </div>
         
         <div className="product-descript">
