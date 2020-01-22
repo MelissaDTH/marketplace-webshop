@@ -7,7 +7,7 @@ import "./Footer.css";
 function Footer() {
   return (
     <Fragment>
-      <footer className='footer-foot'> 
+      <footer className='footer-container'> 
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" className='footer'>
         <Navbar.Brand href="/">Marketplace</Navbar.Brand>
         <Nav className="mr-auto">
