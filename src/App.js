@@ -16,12 +16,14 @@ import ProductList from "./components/ProductList";
 import ProductDetails from "./components/ProductDetails";
 import Cart from "./components/Cart/";
 import Checkout from "./components/Checkout/Checkout";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <div className='App'>
     <Fragment>
       <NavigationBar />
+      <ScrollToTop>
       <Route path="/" exact component={HomeContainer} />
       <Route path="/about/" component={About} />
       <Route path="/signup-success/" component={SignupSuccess} />
@@ -34,6 +36,7 @@ function App() {
       <Route path="/cart/" component={Cart} />
       <Route path="/checkout/" component={Checkout } />
       <Footer />
+      </ScrollToTop>
     </Fragment>
     </div>
   );
