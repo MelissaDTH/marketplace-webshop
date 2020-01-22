@@ -1,12 +1,10 @@
 .about main {
   width: 950px;
   margin: 50px auto;
-
 }
 
 .about img {
-  width: 530px;
-  height: 358px;
+  width: 50%;
 }
 
 .about article {
@@ -14,6 +12,7 @@
   display: flex;
   justify-content: space-between;
   border: 1px solid lightgray;
+  background-color: white;
 }
 
 .about article .about-content {
@@ -29,4 +28,9 @@
 
 .about-content, h1 {
   line-height: 26px;
+}
+
+.about-content {
+  line-height: 30px;
+
 }
