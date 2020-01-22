@@ -8,7 +8,7 @@ import { connect } from "react-redux";
 function ProductList(props) {
   return (
     <div className="product">
-      <h1 className='cat-title'>{props.category.name}</h1>
+      <h1 className="cat-title">{props.category.name}</h1>
       {!props.products.length ? (
         <h2>Loading...</h2>
       ) : (
@@ -32,23 +32,23 @@ function ProductList(props) {
                     <h3>
                       <b>{product.name}</b>
                     </h3>
-                    <div className='product-descr'>
-                    <p>{product.description}</p>
-                    <h5>
-                      <b>€ {product.price.toFixed(2)}</b>
-                    </h5>
-                    <p>
-                      <i>Color: {product.color}</i>
-                      <Button
-                        variant="warning"
-                        className="add-to-cart"
-                        onClick={() => props.addProduct(product)}
-                      >
-                        Add to Cart
-                      </Button>
-                    </p>{" "}
+                    <div className="product-descr">
+                      <p>{product.description}</p>
+                      <h5>
+                        <b>€ {product.price.toFixed(2)}</b>
+                      </h5>
+                      <p>
+                        <i>Color: {product.color}</i>
+                      </p>{" "}
                     </div>
                   </Link>
+                  <Button
+                    variant="warning"
+                    className="add-to-cart"
+                    onClick={() => props.addProduct(product)}
+                  >
+                    Add to Cart
+                  </Button>
                 </div>
               </ListGroup.Item>
             </Card>

@@ -6,9 +6,21 @@ This webshop was created by me for the final exam in week 8 of Codaisseur's Code
 
 
 ## Table of contents 
+- **[A quick overview](#a-quick-overview)**
 - **[Technologies used](#technologies-used)**
 - **[Application features](#application-features)**
 - **[Project set-up](#project-set-up)**
+
+
+## A quick overview:
+
+  <hr />
+
+  ![gif](./src/GIF/marketplace-1.gif)
+
+  <hr />
+<br />
+
 
 ## Technologies used 
 
