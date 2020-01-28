@@ -6,7 +6,7 @@ import { addProduct } from "../../actions/cart";
 
 function ProductDetails(props) {
   const product = props.product;
-  console.log("product", product);
+  // console.log("product", product);
 
   return (
     <div className="details">
