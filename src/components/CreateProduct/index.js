@@ -47,7 +47,7 @@ class CreateProductContainer extends React.Component {
         onSubmit={this.onSubmit}
         onChange={this.onChange}
         values={this.state}
-        categories={this.props.categories}
+        // categories={this.props.categories}
       />
     );
   }
@@ -55,7 +55,7 @@ class CreateProductContainer extends React.Component {
 
 function mapStateToProps(state) {  
   return {
-    categories: state.categories,
+    // categories: state.categories,
     category: state.category,
     products: state.products,
     login: state.login
