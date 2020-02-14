@@ -15,11 +15,13 @@
 }
 
 .cart-products {
+  padding: 1rem;
     max-width: 1050px;
     margin: 10px auto;
     background-color: white;
     justify-content: space-between;
     line-height: 15px;  
+    border-radius: 1.5rem;
 }
 
 .total-amount {

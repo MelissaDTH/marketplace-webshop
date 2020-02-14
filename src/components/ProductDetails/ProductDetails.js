@@ -6,7 +6,7 @@ import { addProduct } from "../../actions/cart";
 
 function ProductDetails(props) {
   const product = props.product;
-  console.log("product", product);
+  // console.log("product", product);
 
   return (
     <div className="details">
@@ -38,7 +38,7 @@ function ProductDetails(props) {
             onClick={() => props.addProduct(product)}
           > Add to Cart
           </Button>
-          <hr />
+          <br/><br/>
         </div>
         
         <div className="product-descript">
