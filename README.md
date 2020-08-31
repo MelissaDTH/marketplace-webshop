@@ -103,7 +103,7 @@ git clone https://github.com/MelissaDTH/marketplace-webshop.git
 npm install
 ```
 
-## 3. To start a development server:
+### 3. To start a development server:
 
 ``` 
 npm start
@@ -119,23 +119,23 @@ You will also see any lint errors in the console.
 
 <i> You will need to create a container on your computer for the database, I used [Docker](http://docker.com/).</i>
 
-## 1. Clone the repository 
+### 1. Clone the repository 
 ```
-git clone https://github.com/sssgordon/birch-server.git
+git clone https://github.com/MelissaDTH/marketplace-server.git 
 ```
 
-## 2. Install all dependencies
+### 2. Install all dependencies
 ```
 npm install
 ```
 
-## 3. To start the server
+### 3. To start the server
 
 ``` 
 nodemon .
 ```
 
-## 4. Start the database:
+### 4. Start the database:
 
 ``` 
 Open Docker, connect with the password 'secret'
