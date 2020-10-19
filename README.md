@@ -129,13 +129,20 @@ git clone https://github.com/MelissaDTH/marketplace-server.git
 npm install
 ```
 
-### 3. To start the server
+### 3. Run PostgreSQL in a container and connect to it
+
+``` 
+docker run -d -p 5432:5432 -e POSTGRES_PASSWORD=secret postgres
+```
+
+### 4. To start the server
 
 ``` 
 nodemon .
 ```
 
-### 4. Start the database:
+
+### 5. Start the database:
 
 ``` 
 Open Docker, connect with the password 'secret'
