@@ -2,7 +2,7 @@
 
 ## What this project is about 
 
-This webshop was created by me for the final exam in week 8 of Codaisseur's Code Academy. We initially had to create an application where you can buy tickets for certain events, containing different features and thus we had to work on User Stories. When I passed this exam, I have continued working on it but altered the assignment and the theme of the application so that I was allowed to put this online. I have changed it to a webshop, gave it a nice styling and cleaned up my code. I have also added features that were not in the assignment, like a shopping cart. The back-end repository can be found here ([Back-end repository](https://github.com/MelissaDTH/marketplace-server.git)).
+This webshop was created by me for the final exam in week 8 of Codaisseur's Code Academy. We initially had to create an application where you can buy tickets for certain events, containing different features and thus we had to work on User Stories. When I passed this exam, I have continued working on it but altered the assignment and the theme of the application so that I was allowed to put this online. I have changed it to a webshop, gave it styling and cleaned up my code. I have also added features that were not in the assignment, like a shopping cart. The back-end repository can be found here ([Back-end repository](https://github.com/MelissaDTH/marketplace-server.git)). Don't forget to seed the database with the seeds.js file, so that there's actually products shown!
 
 
 ## Table of contents 
@@ -103,7 +103,7 @@ git clone https://github.com/MelissaDTH/marketplace-webshop.git
 npm install
 ```
 
-## 3. To start a development server:
+### 3. To start a development server:
 
 ``` 
 npm start
@@ -119,23 +119,30 @@ You will also see any lint errors in the console.
 
 <i> You will need to create a container on your computer for the database, I used [Docker](http://docker.com/).</i>
 
-## 1. Clone the repository 
+### 1. Clone the repository 
 ```
-git clone https://github.com/sssgordon/birch-server.git
+git clone https://github.com/MelissaDTH/marketplace-server.git 
 ```
 
-## 2. Install all dependencies
+### 2. Install all dependencies
 ```
 npm install
 ```
 
-## 3. To start the server
+### 3. Run PostgreSQL in a container and connect to it
+
+``` 
+docker run -d -p 5432:5432 -e POSTGRES_PASSWORD=secret postgres
+```
+
+### 4. To start the server
 
 ``` 
 nodemon .
 ```
 
-## 4. Start the database:
+
+### 5. Start the database:
 
 ``` 
 Open Docker, connect with the password 'secret'
