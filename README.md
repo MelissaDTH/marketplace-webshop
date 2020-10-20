@@ -80,6 +80,12 @@ To showcase that I can work with algorithms as well, there is a risk algorithm. 
     * Opposite of that, 10% will be added if it was not during these hours
   * If there are > 3 comments on the product, 10% risk will be added
 
+#### Risk algorithm add on
+The risk percentage is indicated with a color schema similar to a traffic light:
+* If the risk on the product is > 49%, it will be colored **red**
+* If the risk on the product is > 19%, it will be colored **yellow**
+* If the risk on the product is < 20%, it will be colored **green**
+
 ## :construction: Still under construction :construction:
 
  * Logged in customers can not edit a product
