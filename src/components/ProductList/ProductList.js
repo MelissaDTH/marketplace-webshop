@@ -12,7 +12,7 @@ function ProductList(props) {
       {!props.products.length ? (
         <h2>Loading...</h2>
       ) : (
-        props.products.map(product => (
+        props.products.map((product) => (
           <div className="product-div" key={product.id}>
             <Card>
               <ListGroup.Item className="listgroup">
@@ -29,7 +29,7 @@ function ProductList(props) {
                     className="product-link"
                     to={`/products/${product.id}/comments`}
                   >
-                    <h3>
+                    <h3 className="product-name">
                       <b>{product.name}</b>
                     </h3>
                     <div className="product-descr">

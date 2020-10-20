@@ -22,22 +22,27 @@
   justify-content: space-around;
 } */
 
-.details_info {
-  display: flexbox;
+.details-title, .details_info {
+  margin-top: 10px;
+  text-align: center;
+  line-height: 48px;
+}
+.details_risk {
+  text-align: right;
 }
 
 .details_img-container img {
   margin: 0 auto;
-  float: right;
-  /* max-width: 390px; */
+  float: left;
+  border: lightgray 5px solid;
+
+  /* align-content: center; */
+  /* margin-left: 22rem; */
+  max-width: 390px;
 }
 
 .details__info {
   justify-content: space-between;
-}
-
-.details-title {
-  text-align: center;
 }
 
 .details h3 {

@@ -22,7 +22,6 @@ class ProductDetailsContainer extends React.Component {
           <ProductDetails
             product={this.props.product}
             comments={this.props.comments}
-            selectProduct={this.selectProduct}
           />
           <br />
           <Comments productId={this.props.match.params.productId} />
@@ -35,11 +34,11 @@ class ProductDetailsContainer extends React.Component {
   }
 }
 
-const mapStateToProps = reduxState => {  
+const mapStateToProps = (reduxState) => {
   return {
     product: reduxState.product,
     products: reduxState.products,
-    comments: reduxState.comments
+    comments: reduxState.comments,
   };
 };
 

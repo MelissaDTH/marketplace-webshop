@@ -22,7 +22,9 @@ class ProductsListContainer extends React.Component {
         />
         {this.props.login ? (
           <div>
-            <h3 className='product-sell-title'>Start selling something</h3>
+            <h3 className="product-sell-title">
+              Start selling something for this category
+            </h3>
 
             <CreateProduct
               category={this.props.category}
@@ -32,10 +34,14 @@ class ProductsListContainer extends React.Component {
           </div>
         ) : (
           <div>
-            <h3 className='product-sell-title'>Start selling something</h3>
+            <h3 className="product-sell-title">
+              Start selling something for this category
+            </h3>
             <Link to="/login">
               {" "}
-              <h4 className='login-to-sell-link'>Click here to log in and sell your items</h4>{" "}
+              <h4 className="login-to-sell-link">
+                Click here to log in and sell your items
+              </h4>{" "}
             </Link>
           </div>
         )}
@@ -44,11 +50,11 @@ class ProductsListContainer extends React.Component {
   }
 }
 
-const mapStateToProps = ReduxState => {
+const mapStateToProps = (ReduxState) => {
   return {
     category: ReduxState.category,
     products: ReduxState.products,
-    login: ReduxState.login
+    login: ReduxState.login,
   };
 };
 

@@ -1,15 +1,10 @@
-.product h2 {
-  font-size: 30px;
-  text-align: center;
-margin: 100px 50px 1000px 20px ;
-}
-
 .product-info-div {
   width: 100%;
 }
 
 .product-info-div button {
   float: right;
+  margin-bottom: -7px;
 }
 
 .product-div {
@@ -31,7 +26,8 @@ margin: 100px 50px 1000px 20px ;
   max-height: 250px;
   float: left;
   border: lightgray 5px solid;
-  /* margin: -11px 10px -30px -20px; */
+  margin-top: 3px;
+  /* margin: -11px 10px -30px -20px; To keep it in corner */
 }
 
 .product-div h5 {
@@ -77,6 +73,29 @@ margin: 100px 50px 1000px 20px ;
   .listgroup img {
     width: 400px;
     height: 263px;
-    margin: -11px 10px -1px -20px;
+  }
+  .product-name {
+    margin-top: 16rem;
   }
 }
+
+@media only screen and (min-width: 762px) {
+  .product-descr {
+    margin-left: 22rem;
+  }
+  
+  .product-name {
+    margin-left: 22rem;
+  }
+  .product-info-div button {
+    margin-top: -15px;
+  }
+}
+
+/* Is this still being used? Can be deleted? */
+/* .product h2 {
+  font-size: 30px;
+  text-align: center;
+  margin-left: 22rem;
+margin: 100px 50px 1000px 20px;
+} */
