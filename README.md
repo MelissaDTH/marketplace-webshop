@@ -73,13 +73,27 @@ This webshop was created by me for the final exam in week 8 of Codaisseur's Code
 
 #### Risk algorithm
 
-Products can be added by users, so it can always have a certain risk to it when buying. In this webshop, an algorithm will calculate the amount of risk the product has based upon:
+To showcase that I can work with algorithms as well, there is a risk algorithm. Products can be added by users, so it can always have a certain risk to it when buying. In this webshop, an algorithm will calculate the amount of risk the product has based upon:
 
-- There is a minimal risk of 5% and a maximum of 95%.
+- There is a minimal risk of 10% and a maximum of 95%.
 - 10% will be added to the risk if the product is the user's only product
 - 10% will be deducted from the risk if a product was added during business hours (09:00 - 17:00)
   - Opposite of that, 10% will be added if it was not during these hours
-- If there are >3 comments on the product, 10% risk will be added
+- If there are > 3 comments on the product, 10% risk will be added
+
+#### Risk algorithm add on
+
+The risk percentage is indicated with a color schema similar to a traffic light:
+
+- If the risk on the product is > 49%, it will be colored **red**
+- If the risk on the product is > 19%, it will be colored **yellow**
+- If the risk on the product is < 20%, it will be colored **green**
+
+* There is a minimal risk of 5% and a maximum of 95%.
+* 10% will be added to the risk if the product is the user's only product
+* 10% will be deducted from the risk if a product was added during business hours (09:00 - 17:00)
+  - Opposite of that, 10% will be added if it was not during these hours
+* If there are >3 comments on the product, 10% risk will be added
 
 ## :construction: Still under construction :construction:
 
