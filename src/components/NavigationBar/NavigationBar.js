@@ -7,7 +7,7 @@ function NavigationBar() {
   return (
     <Fragment>
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-      <Navbar.Brand href="/">
+        <Navbar.Brand href="/">
           <FontAwesomeIcon icon={faStore} /> {""}
           Marketplace
         </Navbar.Brand>
@@ -22,10 +22,16 @@ function NavigationBar() {
               id="collasible-nav-dropdown"
             >
               <NavDropdown.Item href="/category/1/">Home</NavDropdown.Item>
-              <NavDropdown.Item href="/category/2/">Electronics</NavDropdown.Item>
-              <NavDropdown.Item href="/category/3/">Plants and gardening</NavDropdown.Item>
+              <NavDropdown.Item href="/category/2/">
+                Electronics
+              </NavDropdown.Item>
+              <NavDropdown.Item href="/category/3/">
+                Plants and gardening
+              </NavDropdown.Item>
               <NavDropdown.Item href="/category/4/">Fashion</NavDropdown.Item>
-              <NavDropdown.Item href="/category/5/">Sporting Goods</NavDropdown.Item>
+              <NavDropdown.Item href="/category/5/">
+                Sporting Goods
+              </NavDropdown.Item>
               <NavDropdown.Item href="/category/6/">
                 Movies, Music and Games
               </NavDropdown.Item>

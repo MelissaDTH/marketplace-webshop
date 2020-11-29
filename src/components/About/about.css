@@ -8,7 +8,7 @@
 }
 
 .about article {
-  height: 360px;
+  height: 305px;
   display: flex;
   justify-content: space-between;
   border: 1px solid lightgray;
@@ -25,12 +25,11 @@
   flex-direction: row-reverse;
 }
 
-
-.about-content, h1 {
+.about-content,
+h1 {
   line-height: 26px;
 }
 
 .about-content {
   line-height: 30px;
-
 }

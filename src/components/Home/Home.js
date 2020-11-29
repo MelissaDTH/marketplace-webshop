@@ -22,9 +22,7 @@ export default function Home(props) {
           </p>
           <br />
           <p className="home-closure">
-            Love,
-            <br />
-            Marketplace team
+            Marketplace team <img src="apple-icon.svg" height="20px"></img>
           </p>
           <br />
           <br />

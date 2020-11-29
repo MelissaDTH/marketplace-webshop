@@ -6,13 +6,14 @@
   max-width: 2350px;
 }
 
-.image-card-link:link, .image-card-link:visited {
-    text-decoration: none;
-    color: rgb(33, 32, 32);
-    cursor: pointer;
-  }
-  
-  .image-card-link:hover {
-    text-decoration: none;
-    color: rgb(133, 80, 1);
-  }
+.image-card-link:link,
+.image-card-link:visited {
+  text-decoration: none;
+  color: rgb(33, 32, 32);
+  cursor: pointer;
+}
+
+.image-card-link:hover {
+  text-decoration: none;
+  color: rgb(86, 86, 86);
+}
