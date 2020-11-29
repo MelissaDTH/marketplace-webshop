@@ -22,7 +22,12 @@ export default function Home(props) {
           </p>
           <br />
           <p className="home-closure">
-            Marketplace team <img src="apple-icon.svg" height="20px"></img>
+            Marketplace team{" "}
+            <img
+              src="apple-icon.svg"
+              height="20px"
+              alt="webshop Marketplace icon"
+            ></img>
           </p>
           <br />
           <br />

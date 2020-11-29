@@ -17,7 +17,7 @@ function Footer() {
         >
           <Navbar.Brand href="/">
             <img
-              src="apple-icon.svg"
+              src="/apple-icon.svg"
               height="30px"
               alt="webshop Marketplace icon"
             />

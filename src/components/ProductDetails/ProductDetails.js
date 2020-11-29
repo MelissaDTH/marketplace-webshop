@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./ProductDetails.css";
 import { Button } from "react-bootstrap";
 import { connect } from "react-redux";
